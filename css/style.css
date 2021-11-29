@@ -1,0 +1,87 @@
+@font-face {
+    font-family: "Helvetica-JDJP";
+    src: url(/css/font/HelveticaNeueLTStd-Th.otf);
+}
+
+
+#proyectos video {
+    width: 150px;
+    height: 50px;
+}
+
+body {
+    background-color: #F1FAEE;
+    font-family: "Helvetica-JDJP";
+}
+
+header, footer {
+    background-color: #A8DADC;
+    height: 4em;
+    width: 100%;
+    display: flex;
+}
+
+
+header div{
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    width: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    padding-left: 2em;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    
+}
+
+a {
+    text-align: center;
+    width: 4em;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    margin: 0px 15px;
+}
+
+#inicio{
+    display: flex;
+    height: 25em;
+    margin: 0em 2em;
+}
+
+#presentacion {
+    width: 75%;
+    display: flex;
+    font-size: xx-large;
+    align-items: center;
+}
+
+#imagen {
+    width: 25%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+img#jdjp {
+    width: 200px;
+    height: 240px;
+    border-radius: 50%; 
+}
+
+#pro-lista img {
+    border-radius: 50%; 
+    width: 100px; 
+    height: 100px;
+}
+
+footer {
+    align-items: center;
+    justify-content: center;
+}
+
+
