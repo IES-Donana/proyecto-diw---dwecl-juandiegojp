@@ -4,19 +4,18 @@
 }
 
 
-#proyectos video {
-    width: 150px;
-    height: 50px;
-}
-
 body {
     background-color: #F1FAEE;
     font-family: "Helvetica-JDJP";
 }
 
+h2 {
+    text-align: center;
+}
+
 header, footer {
     background-color: #A8DADC;
-    height: 4em;
+    height: 5em;
     width: 100%;
     display: flex;
 }
@@ -73,10 +72,22 @@ img#jdjp {
     border-radius: 50%; 
 }
 
+#proyectos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
 #pro-lista img {
     border-radius: 50%; 
     width: 100px; 
     height: 100px;
+}
+video {
+    width: 150px;
+    height: 50px;
 }
 
 footer {
