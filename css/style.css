@@ -27,20 +27,21 @@ header div{
     align-self: center;
     width: inherit;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 28px;
     padding-left: 2em;
 }
 
 header nav {
     display: flex;
     align-items: center;
+    padding-right: 50px;
     
 }
 
 a {
     text-align: center;
     width: 4em;
-    font-size: 14px;
+    font-size: 20px;
     text-decoration: none;
     color: #000;
     margin: 0px 15px;
@@ -51,6 +52,7 @@ a {
     height: 25em;
     margin: 0em 2em;
 }
+
 
 #presentacion {
     width: 75%;
@@ -72,13 +74,15 @@ img#jdjp {
     border-radius: 50%; 
 }
 
-#proyectos {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+#slider {
+    position: absolute;
+    transform: rotate(90deg);
+    width: 200px;
 }
 
-
+#pro-lista li{
+    list-style-type: none;
+}
 
 #pro-lista img {
     border-radius: 50%; 
