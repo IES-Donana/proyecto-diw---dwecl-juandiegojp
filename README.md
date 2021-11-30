@@ -31,22 +31,23 @@ seguirme para ver mis trabajos recientes. A la derecha se encuentra el formulari
 puede rellenar para mandarme directamente un comentario/solicitud.
 
 ## PROTOTIPO<a name="id2"></a>
-[Incluye el enlace a tu prototipo realizado en Figma.]
+[Enlace a figma](https://www.figma.com/file/vHbyRQECqAPhzVAnv34hlW/Proyecto?node-id=0%3A1)
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
-[https://www.figma.com/file/vHbyRQECqAPhzVAnv34hlW/Proyecto?node-id=0%3A1]
+[Listado de modificaciones realizadas debidadmente justificadas. ]
 
 ## RECURSOS<a name="id4"></a>
-- Wireframes: https://wireframepro.mockflow.com/
-- Prototipo: https://www.figma.com/
-- Mapa de navegación: https://www.gloomaps.com/
-- Iconos: https://www.iconfinder.com/social-media-icons
-- Fuentes: https://www.dafont.com/es/ , https://freefontsdownload.net/
-- Paleta de colores: https://coolors.co/
-- Slider: https://www.cssportal.com/style-input-range/
+- [Wireframes](https://wireframepro.mockflow.com/)
+- [Prototipo](https://www.figma.com/)
+- [Mapa de navegación](https://www.gloomaps.com/)
+- [Iconos](https://www.iconfinder.com/social-media-icons)
+- [Fuentes](https://www.dafont.com/es/)
+- [Fuentes](https://freefontsdownload.net/)
+- [Paleta de colores](https://coolors.co/)
+- [Slider](https://www.cssportal.com/style-input-range/)
 - 
-- Can I use?: https://caniuse.com/
-- Bootstrap: https://getbootstrap.com/
-- Tailwind: https://tailwindcss.com/docs
-- W3C CSS Validator: https://jigsaw.w3.org/css-validator/
-- W3C HTML Validator: https://validator.w3.org/
+- [Can I use?](https://caniuse.com/)
+- [Bootstrap](https://getbootstrap.com/)
+- [Tailwind](https://tailwindcss.com/docs)
+- [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
+- [W3C HTML Validator](https://validator.w3.org/)
