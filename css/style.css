@@ -52,6 +52,30 @@ a {
   margin: 0px 15px;
 }
 
+.link-underline {
+  display: inline-block;
+  position: relative;
+  
+}
+
+.link-underline:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0px;
+  left: 0px;
+  background-color: #457B9D;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+.link-underline:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 #inicio{
   display: flex;
   height: 25em;
@@ -303,8 +327,6 @@ progress {
 ::-webkit-progress-value {
   background-color: #E63946;
 }
-
-
 
 
 /* FOOTER */
