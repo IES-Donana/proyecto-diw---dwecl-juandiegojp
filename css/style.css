@@ -328,7 +328,29 @@ progress {
   background-color: #E63946;
 }
 
+#media {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
 
+#form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#form input, textarea {
+  background-color: #AAEEAA;
+  opacity: 66%;
+  border: 1px solid black;
+}
+
+input[type='submit'] {
+  width: 100px;
+  height: 50px;
+  border-radius: 25%;
+}
 
 a > img {
   width: 50px;
