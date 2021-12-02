@@ -34,7 +34,7 @@ puede rellenar para mandarme directamente un comentario/solicitud.
 [Enlace a figma](https://www.figma.com/file/vHbyRQECqAPhzVAnv34hlW/Proyecto?node-id=0%3A1)
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
-[Listado de modificaciones realizadas debidadmente justificadas. ]
+- Contacto: Pasa a tener cuatro RRSS en lugar de seis como estaba puesto en el prototipo FIGMA.
 
 ## RECURSOS<a name="id4"></a>
 - [Wireframes](https://wireframepro.mockflow.com/)

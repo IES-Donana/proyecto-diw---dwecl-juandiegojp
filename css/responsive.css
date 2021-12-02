@@ -45,13 +45,14 @@
     }
   
     #media {
-      margin-top: 2em;
+      display: grid;
+      grid-template-columns: repeat(2, 0fr);
+      grid-gap: 15px;
+      grid-auto-rows: minmax(10px, auto);
     }
     
     #form {
-      display: block;
-      text-align: center;
-      padding: initial;
+        width: auto;
     }
   
     

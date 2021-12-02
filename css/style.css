@@ -406,7 +406,7 @@ input[type='submit'] {
   font-size: 14px;
   width: 80px;
   height: 40px;
-  border-radius: 24%;
+  border-radius: 15%;
 }
 
 a > img {
