@@ -1,5 +1,5 @@
 /* Responsive */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 748px) {
     .timeline::after {
     left: 28px;
     }
@@ -37,22 +37,21 @@
     }
   
     #contacto {
-      margin: 0em ;
-      height: 50%;
       display: block;
-      justify-content: center;
-      align-items: center;
     }
   
     #media {
+      
       display: grid;
       grid-template-columns: repeat(2, 0fr);
       grid-gap: 15px;
       grid-auto-rows: minmax(10px, auto);
+      margin: 2em 30%;
     }
     
-    #form {
-        width: auto;
+    form {
+      width: auto;
+      text-align: center;
     }
   
     
@@ -81,13 +80,14 @@
     }
     
     .nav-links{
-        background-color: #A8DADC;
-        opacity: 90%;
-        display: flex;
-        width: 40%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
+      padding: 0px;
+      background-color: #A8DADC;
+      opacity: 90%;
+      display: flex;
+      width: 40%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
     }
     
     .link-item{
