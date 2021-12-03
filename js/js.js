@@ -1,6 +1,13 @@
 const toggleButton = document.getElementById('button-menu');
 const navWrapper = document.getElementById('nav');
 var WrapperRemove = 0;
+let nav = document.createElement("nav");
+nav.getAttribute("id","nav");
+nav.getAttribute("class","main-nav");
+let div = document.createElement("div");
+div.getAttribute("class", "nav-links");
+div.appendChild();
+nav.appendChild(div);
 
 
 toggleButton.addEventListener('click',() => {
