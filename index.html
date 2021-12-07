@@ -39,8 +39,8 @@
         </div>
     </div>
     <h2>Proyectos</h2>
-    <input type="range" name="slider" id="slider" value="0" max="100" min="0" autocomplete="off">
     <div id="proyectos">
+      <input type="range" name="slider" id="slider" value="0" max="100" min="0" autocomplete="off">
         <ul id="pro-lista">
             <li id="bulevar">
                 <img src="/img/bulevar.jpg" alt="Bulevar">
@@ -122,11 +122,11 @@
         <div id="form">
             <form action="index.html">
               <label>Nombre completo: </label>
-              <input type="text" name="username" id="username">
+              <input type="text" name="username" id="username" maxlength="50" required>
               <label>Correo de contacto: </label>
-              <input type="text" name="usermail" id="usermail">
+              <input type="email" name="usermail" id="usermail" required>
               <label>Comentario: </label>
-              <textarea name="comentario" id="comentario" cols="40" rows="10"></textarea>
+              <textarea name="comentario" id="comentario" cols="40" rows="10" required></textarea>
               <div id="button">
                 <input type="submit" value="Enviar">
               </div>
