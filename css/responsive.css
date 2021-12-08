@@ -41,17 +41,18 @@
     }
   
     #media {
-      
       display: grid;
-      grid-template-columns: repeat(2, 0fr);
-      grid-gap: 15px;
+      grid-template-columns: repeat(4, 0fr);
+      grid-gap: 25px;
       grid-auto-rows: minmax(10px, auto);
-      margin: 2em 30%;
+      margin: 2em 11.25em;
     }
     
-    form {
-      width: auto;
-      text-align: center;
+    #form {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
   
     
