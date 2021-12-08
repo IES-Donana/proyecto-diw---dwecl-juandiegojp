@@ -122,13 +122,13 @@
         <div id="form">
             <form action="index.html">
               <label>Nombre completo: </label>
-              <input type="text" name="username" id="username" maxlength="50" required>
+              <input type="text" name="username" id="username" minlength="1" maxlength="50" required>
               <label>Correo de contacto: </label>
-              <input type="email" name="usermail" id="usermail" required>
+              <input type="email" name="usermail" id="usermail" minlength="3" required>
               <label>Comentario: </label>
               <textarea name="comentario" id="comentario" cols="40" rows="10" required></textarea>
               <div id="button">
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" onclick="validar()">
               </div>
             </form>
         </div>

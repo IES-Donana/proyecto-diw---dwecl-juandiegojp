@@ -33,22 +33,26 @@ var email = document.getElementById("usermail");
 var comment = document.getElementById("comentario");
 comment.disabled = true;
 
-/* username.onchange = cambioUser; */
 email.onchange = cambioEmail;
+email.onblur = disComment;
 
-if (username.validity && email.validity) {
-  comment.disabled = false;
+function disComment(e) {
+  if (username.validity.valid && /@/.test(email.value)) {
+    comment.disabled = false;
+  } else {
+    comment.disabled = true;
+  }
 }
 
 function cambioEmail(e) {
-  if (email.validity.typeMismatch) {
+  if (!/@/.test(email.value)) {
     email.style.backgroundColor = "red";
     alert("¡Se esperaba una dirección de correo electrónico!");
   } else {
     email.style.backgroundColor = "#AAEEAA";
   }
-  ;
 }
+
 
 email.addEventListener('keyup', function (event) {
   if (event.getModifierState('Shift') ) {
