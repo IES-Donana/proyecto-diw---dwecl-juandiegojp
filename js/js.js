@@ -1,58 +1,74 @@
 /* Menú Hamburguesa */
-const toggleButton = document.getElementById('button-menu');
-const navWrapper = document.getElementById('nav');
-
+var toggleButton = document.getElementById('button-menu');
 let nav = document.getElementById("nav");
-let div = document.createElement("div");
-let inicio = document.createElement("a");
-let proyectos = document.createElement("a");
-let cv = document.createElement("a");
-let sobreMi = document.createElement("a");
-let contacto = document.createElement("a");
+let div;
 
-div.setAttribute("class","nav-links");
-inicio.setAttribute("class", "link-underline nav-item");
-inicio.setAttribute("href", "#inicio");
-proyectos.setAttribute("class", "link-underline nav-item");
-proyectos.setAttribute("href", "#proyectos");
-cv.setAttribute("class", "link-underline nav-item");
-cv.setAttribute("href", "#cv");
-sobreMi.setAttribute("class", "link-underline nav-item");
-sobreMi.setAttribute("href", "#sobre-mi");
-contacto.setAttribute("class", "link-underline nav-item");
-contacto.setAttribute("href", "#contacto");
+function crearMenu() {
+  div = document.createElement("div");
+  let inicio = document.createElement("a");
+  let proyectos = document.createElement("a");
+  let cv = document.createElement("a");
+  let sobreMi = document.createElement("a");
+  let contacto = document.createElement("a");
+  
+  div.setAttribute("class","nav-links");
+  inicio.setAttribute("class", "link-underline nav-item");
+  inicio.setAttribute("href", "#inicio");
+  proyectos.setAttribute("class", "link-underline nav-item");
+  proyectos.setAttribute("href", "#proyectos");
+  cv.setAttribute("class", "link-underline nav-item");
+  cv.setAttribute("href", "#cv");
+  sobreMi.setAttribute("class", "link-underline nav-item");
+  sobreMi.setAttribute("href", "#sobre-mi");
+  contacto.setAttribute("class", "link-underline nav-item");
+  contacto.setAttribute("href", "#contacto");
+  
+  inicio.innerText = "Inicio";
+  proyectos.innerText = "Proyectos";
+  cv.innerText = "CV";
+  sobreMi.innerText = "Sobre mí";
+  contacto.innerText = "Contacto";
 
-inicio.innerText = "Inicio";
-proyectos.innerText = "Proyectos";
-cv.innerText = "CV";
-sobreMi.innerText = "Sobre mí";
-contacto.innerText = "Contacto";
+  div.appendChild(inicio);
+  div.appendChild(proyectos);
+  div.appendChild(cv);
+  div.appendChild(sobreMi);
+  div.appendChild(contacto);
+  nav.appendChild(div);
+}
 
-div.appendChild(inicio);
-div.appendChild(proyectos);
-div.appendChild(cv);
-div.appendChild(sobreMi);
-div.appendChild(contacto);
-nav.appendChild(div);
-
-
+var x=0;
 
 toggleButton.addEventListener('click',() => {
-  navWrapper.classList.toggle('show');
-  toggleButton.classList.toggle('close');
+  if (nav.hasChildNodes()) {
+    console.log(nav.hasChildNodes());
+    x++;
+    console.log(x);
+    nav.classList.toggle('show');
+    toggleButton.classList.toggle('close');
+    if (x==1) {
+      div.remove();
+      x=0;
+    }
+  } else {
+    console.log(nav.hasChildNodes());
+    crearMenu();
+    nav.classList.toggle('show');
+    toggleButton.classList.toggle('close');
+  }
 });
 
-navWrapper.addEventListener('click',e => {
+nav.addEventListener('click',e => {
     if(e.target.id === 'nav') {
-      navWrapper.classList.remove('show');
+      nav.classList.remove('show');
       toggleButton.classList.remove('close');
     }
-    navWrapper.remove();
 });
 
 
 /* Validación de formulario */
 var username = document.getElementById("username");
+var apellido = document.getElementById("apellido");
 var email = document.getElementById("usermail");
 var comment = document.getElementById("comentario");
 comment.disabled = true;
@@ -90,9 +106,14 @@ email.addEventListener('keyup', function (event) {
   }
 });
 
-function validar() {
-  if (username.validity.valid && /@/.test(email.value)) {
-    alert("El formulario está correctamente validado");
+function validar(e) {
+  if (username.validity.valid && apellido.validity.valid && /@/.test(email.value)) {
+    if(!confirm("El formulario será enviado, ¿estás seguro de los campos rellenados?")) {
+      e.preventDefault();
+      console.log("Rechazado.");
+    } else {
+      console.log("Formulario validado y enviado.");
+    }
   } else {
     alert("El formulario no está correctamente validado");
 }};
