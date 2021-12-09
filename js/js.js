@@ -2,6 +2,7 @@
 var toggleButton = document.getElementById('button-menu');
 let nav = document.getElementById("nav");
 let div;
+crearMenu();
 
 function crearMenu() {
   div = document.createElement("div");
@@ -38,23 +39,22 @@ function crearMenu() {
 }
 
 var x=0;
-
 toggleButton.addEventListener('click',() => {
   if (nav.hasChildNodes()) {
-    console.log(nav.hasChildNodes());
-    x++;
-    console.log(x);
     nav.classList.toggle('show');
     toggleButton.classList.toggle('close');
-    if (x==1) {
+    x++;
+    console.log(x);
+    if (x==2) {
       div.remove();
       x=0;
     }
   } else {
-    console.log(nav.hasChildNodes());
+    //console.log(nav.hasChildNodes());
     crearMenu();
     nav.classList.toggle('show');
     toggleButton.classList.toggle('close');
+    x++;
   }
 });
 

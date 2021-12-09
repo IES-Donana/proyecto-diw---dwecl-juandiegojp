@@ -164,13 +164,6 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -10px;
 }
 
-
-
-
-
-
-
-
 #pro-lista li{
   list-style-type: none;
 }
@@ -255,7 +248,8 @@ input[type=range]::-webkit-slider-thumb {
   transform: rotate(-90deg);
 }
 
-  
+
+/* Barras de progreso */
 #progreso {
   display: flex;
   flex-direction: column;
@@ -279,6 +273,12 @@ progress {
 ::-webkit-progress-value {
   background-color: #E63946;
 }
+
+/* Sobre mi */ 
+#sobre-mi {
+  padding: 0em 2em;
+}
+
 
 #contacto {
   display: flex;
