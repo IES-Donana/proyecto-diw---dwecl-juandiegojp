@@ -5,48 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio: Juan Diego</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/responsive.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <script defer src="/js/js.js"></script>
 </head>
-<body>
-    <header class="main-header">
-        <div id="name">
+<body class="bg-green-50">
+    <header class="bg-blue-200">
+        <div class="flex justify-center">
             JUAN DIEGO JURADO PIMENTEL
         </div>
-        <nav id="nav" class="main-nav">
+        <nav id="nav" class="flex space-x-4">
           
         </nav>
-        <button id="button-menu" class="button-menu" >
+        <button>
           <span></span>
           <span></span>
           <span></span>
         </button>
     </header>
-    <div id="inicio">
-        <div id="presentacion">
+    <div>
+        <div>
             <p>Soy Juan Diego, Técnico Superior en Sistemas de Telecomunicaciones e
               Informáticos y Desarrollador de Aplicaciones Web.</p>
         </div>
-        <div id="imagen">
+        <div>
             <img src="/img/jdjp.jpg" alt="foto-jdjp" id="jdjp">
         </div>
     </div>
     <h2>Proyectos</h2>
-    <div id="proyectos">
+    <div>
       <input type="range" name="slider" id="slider" value="0" max="100" min="0" autocomplete="off">
-        <ul id="pro-lista">
-            <li id="bulevar">
+        <ul>
+            <li>
                 <img src="/img/bulevar.jpg" alt="Bulevar">
                 <p>Estudio Bulevar</p>
                 <p>Diseño para un estudio de diseño.</p>
             </li>
-            <li id="zodiacolors">
+            <li>
                 <img src="/img/zodiacolors.png" alt="Zodiacolors">
                 <p>Zodiacolors</p>
                 <p>Diseño de una sección para la marca Titanux</p>
             </li>
-            <li id="original">
+            <li>
                 <img src="/img/original.jpg" alt="original">
                 <p>Lo + original</p>
                 <p>Diseño de un sitio web para un comercio local.</p>
@@ -54,33 +53,83 @@
         </ul>
     </div>
     <h2>Currículum Vitae</h2>
-    <div id="cv">
-        <div class="timeline">
-          <div class="container left">
-            <div class="content">
-              <h4>Graduado en Formación Profesional de Ciclo Superior en 
-                Técnico de Desarrollado de Aplicaciones Web. (202X)</h4>
-            </div>
+    <div>
+      <section>
+        <div class="bg-black text-white py-8">
+        <div class="container mx-auto flex flex-col items-start md:flex-row my-12 md:my-24">
+          <div class="flex flex-col w-full sticky md:top-36 lg:w-1/3 mt-2 md:mt-12 px-8">
+            <p class="ml-2 text-yellow-300 uppercase tracking-loose">Working Process</p>
+            <p class="text-3xl md:text-4xl leading-normal md:leading-relaxed mb-2">Working Process of Fest</p>
+            <p class="text-sm md:text-base text-gray-50 mb-4">
+              Here’s your guide to the tech fest 2021 process. Go through all the steps to know the exact process of the
+              fest.
+            </p>
+            <a href="#"
+            class="bg-transparent mr-auto hover:bg-yellow-300 text-yellow-300 hover:text-white rounded shadow hover:shadow-lg py-2 px-4 border border-yellow-300 hover:border-transparent">
+            Explore Now</a>
           </div>
-          <div class="container right">
-            <div class="content">
-              <h4>Servicio Técnico en MediaMarkt <br> (04/2020 - 06/202)</h4>
-            </div>
-          </div>
-          <div class="container left">
-            <div class="content">
-              <h4>Graduado en Formación Profesional de Ciclo Superior en 
-                Técnico de Sistemas Informáticos e Informáticos.</h4>
-            </div>
-          </div>
-          <div class="container right">
-            <div class="content">
-              <h4>Graduado en Bachillerato de Ciencias.</h4>
+          <div class="ml-0 md:ml-12 lg:w-2/3 sticky">
+            <div class="container mx-auto w-full h-full">
+              <div class="relative wrap overflow-hidden p-10 h-full">
+                <div class="border-2-2 border-yellow-555 absolute h-full border"
+                  style="right: 50%; border: 2px solid #FFC100; border-radius: 1%;"></div>
+                <div class="border-2-2 border-yellow-555 absolute h-full border"
+                  style="left: 50%; border: 2px solid #FFC100; border-radius: 1%;"></div>
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                  <div class="order-1 w-5/12"></div>
+                  <div class="order-1 w-5/12 px-1 py-4 text-right">
+                    <p class="mb-3 text-base text-yellow-300">1-6 May, 2021</p>
+                    <h4 class="mb-3 font-bold text-lg md:text-2xl">Registration</h4>
+                    <p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
+                      Pick your favourite event(s) and register in that event by filling the form corresponding to that
+                      event. Its that easy :)
+                    </p>
+                  </div>
+                </div>
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                  <div class="order-1 w-5/12"></div>
+                  <div class="order-1  w-5/12 px-1 py-4 text-left">
+                    <p class="mb-3 text-base text-yellow-300">6-9 May, 2021</p>
+                    <h4 class="mb-3 font-bold text-lg md:text-2xl">Participation</h4>
+                    <p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
+                      Participate online. The links for your registered events will be sent to you via email and whatsapp
+                      groups. Use those links and show your talent.
+                    </p>
+                  </div>
+                </div>
+                <div class="mb-8 flex justify-between flex-row-reverse items-center w-full left-timeline">
+                  <div class="order-1 w-5/12"></div>
+                  <div class="order-1 w-5/12 px-1 py-4 text-right">
+                    <p class="mb-3 text-base text-yellow-300"> 10 May, 2021</p>
+                    <h4 class="mb-3 font-bold text-lg md:text-2xl">Result Declaration</h4>
+                    <p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
+                      The ultimate genius will be revealed by our judging panel on 10th May, 2021 and the resukts will be
+                      announced on the whatsapp groups and will be mailed to you.
+                    </p>
+                  </div>
+                </div>
+    
+                <div class="mb-8 flex justify-between items-center w-full right-timeline">
+                  <div class="order-1 w-5/12"></div>
+    
+                  <div class="order-1  w-5/12 px-1 py-4">
+                    <p class="mb-3 text-base text-yellow-300">12 May, 2021</p>
+                    <h4 class="mb-3 font-bold  text-lg md:text-2xl text-left">Prize Distribution</h4>
+                    <p class="text-sm md:text-base leading-snug text-gray-50 text-opacity-100">
+                      The winners will be contacted by our team for their addresses and the winning goodies will be sent at
+                      their addresses.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <img class="mx-auto -mt-36 md:-mt-36" src="https://user-images.githubusercontent.com/54521023/116968861-ef21a000-acd2-11eb-95ac-a34b5b490265.png" />
             </div>
           </div>
         </div>
+      </div>
+      </section>
         <h2 style="text-align: center;">Aptitudes:</h2>
-        <ul id="progreso">
+        <ul>
           <li>
             <h3>Proactivo:</h3>
             <progress value="67" max="100"></progress>
@@ -100,21 +149,21 @@
         </ul>
     </div>
     <h2>Sobre mí</h2>
-    <div id="sobre-mi">
+    <div>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatibus non itaque nesciunt quibusdam 
         doloremque ut amet. Distinctio quidem qui, animi in eum, saepe consequatur quos quis molestias, 
         alias accusamus.
     </div>
     <h2>Contacto</h2>
-    <div id="contacto">
-        <div id="media">
+    <div>
+        <div>
             <a href="https://github.com/juandiegojp"><img src="/img/icons/github.png" alt="github"></a>
             <a href="https://es.linkedin.com/in/juan-diego-jurado-pimentel-934b3a204"><img src="/img/icons/linkedin.png" alt="linkedin"></a>
             <a href="https://t.me/juandiewe"><img src="/img/icons/telegram.png" alt="telegram"></a>
             <a href="https://twitter.com/"><img src="/img/icons/twitter.png" alt="twitter"></a>
         </div>
-        <div id="form">
-            <form action="index.html" id="formulario">
+        <div>
+            <form action="index.html">
               <label>Nombre completo: </label>
               <input type="text" name="username" id="username" minlength="1" maxlength="50" required>
               <label>Correo de contacto: </label>
