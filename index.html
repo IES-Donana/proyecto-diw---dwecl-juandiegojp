@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Juan Diego</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <script defer src="/js/js.js"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div id="name">
+            JUAN DIEGO JURADO PIMENTEL
+        </div>
+        <nav id="nav" class="main-nav">
+          <div class="nav-links">
+            <a class="link-underline nav-item" href="#inicio">Inicio</a>
+            <a class="link-underline nav-item" href="#proyectos">Proyectos</a>
+            <a class="link-underline nav-item" href="#cv">CV</a>
+            <a class="link-underline nav-item" href="#sobre-mi">Sobre mí</a>
+            <a class="link-underline nav-item" href="#contacto">Contacto</a>
+          </div>
+        </nav>
+        <button id="button-menu" class="button-menu" >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+    </header>
+    <div id="inicio">
+        <div id="presentacion">
+            ¡Saludos! <br>
+            Soy Juan Diego, técnico en Sistemas de Telecomuniaciones e Informáticos y Desarrollador de Aplicaciones Web.
+        </div>
+        <div id="imagen">
+            <img src="/img/jdjp.jpg" alt="foto-jdjp" id="jdjp">
+        </div>
+    </div>
+    <h2>Proyectos</h2>
+    <div id="proyectos">
+      <input type="range" name="slider" id="slider" value="0" max="100" min="0" autocomplete="off">
+        <ul id="pro-lista">
+            <li id="bulevar">
+                <img src="/img/bulevar.jpg" alt="Bulevar">
+                <p>Estudio Bulevar</p>
+                <p>Diseño para un estudio de diseño.</p>
+            </li>
+            <li id="zodiacolors">
+                <img src="/img/zodiacolors.png" alt="Zodiacolors">
+                <p>Zodiacolors</p>
+                <p>Diseño de una sección para la marca Titanux</p>
+            </li>
+            <li id="original">
+                <img src="/img/original.jpg" alt="original">
+                <p>Lo + original</p>
+                <p>Diseño de un sitio web para un comercio local.</p>
+            </li>
+        </ul>
+    </div>
+    <h2>Currículum Vitae</h2>
+    <div id="cv">
+        <div class="timeline">
+          <div class="container left">
+            <div class="content">
+              <h4>Graduado en Formación Profesional de Ciclo Superior en 
+                Técnico de Desarrollado de Aplicaciones Web. (202X)</h4>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h4>Servicio Técnico en MediaMarkt <br> (04/2020 - 06/202)</h4>
+            </div>
+          </div>
+          <div class="container left">
+            <div class="content">
+              <h4>Graduado en Formación Profesional de Ciclo Superior en 
+                Técnico de Sistemas Informáticos e Informáticos.</h4>
+            </div>
+          </div>
+          <div class="container right">
+            <div class="content">
+              <h4>Graduado en Bachillerato de Ciencias.</h4>
+            </div>
+          </div>
+        </div>
+        <h2 style="text-align: center;">Aptitudes:</h2>
+        <ul id="progreso">
+          <li>
+            <h3>Proactivo:</h3>
+            <progress value="67" max="100"></progress>
+          </li>
+          <li>
+            <h3>Resolutivo:</h3>
+            <progress value="70" max="100"></progress>
+          </li>
+          <li>
+            <h3>Autodidacta:</h3>
+            <progress value="60" max="100"></progress>
+          </li>
+          <li>
+            <h3>Capacidad de adaptación:</h3>
+            <progress value="80" max="100"></progress>
+          </li>
+        </ul>
+    </div>
+    <h2>Sobre mí</h2>
+    <div id="sobre-mi">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatibus non itaque nesciunt quibusdam 
+        doloremque ut amet. Distinctio quidem qui, animi in eum, saepe consequatur quos quis molestias, 
+        alias accusamus.
+    </div>
+    <h2>Contacto</h2>
+    <div id="contacto">
+        <div id="media">
+            <a href="https://github.com/juandiegojp"><img src="/img/icons/github.png" alt="github"></a>
+            <a href="https://es.linkedin.com/in/juan-diego-jurado-pimentel-934b3a204"><img src="/img/icons/linkedin.png" alt="linkedin"></a>
+            <a href="https://t.me/juandiewe"><img src="/img/icons/telegram.png" alt="telegram"></a>
+            <a href="https://twitter.com/"><img src="/img/icons/twitter.png" alt="twitter"></a>
+        </div>
+        <div id="form">
+            <form action="index.html">
+              <label>Nombre completo: </label>
+              <input type="text" name="username" id="username" maxlength="50" required>
+              <label>Correo de contacto: </label>
+              <input type="email" name="usermail" id="usermail" required>
+              <label>Comentario: </label>
+              <textarea name="comentario" id="comentario" cols="40" rows="10" required></textarea>
+              <div id="button">
+                <input type="submit" value="Enviar">
+              </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>Juandiewe© Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
