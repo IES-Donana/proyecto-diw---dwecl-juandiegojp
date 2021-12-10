@@ -14,15 +14,7 @@
         <div id="name">
             JUAN DIEGO JURADO PIMENTEL
         </div>
-        <nav id="nav" class="main-nav">
-          <div class="nav-links">
-            <a class="link-underline nav-item" href="#inicio">Inicio</a>
-            <a class="link-underline nav-item" href="#proyectos">Proyectos</a>
-            <a class="link-underline nav-item" href="#cv">CV</a>
-            <a class="link-underline nav-item" href="#sobre-mi">Sobre mí</a>
-            <a class="link-underline nav-item" href="#contacto">Contacto</a>
-          </div>
-        </nav>
+        <nav id="nav" class="main-nav"></nav>
         <button id="button-menu" class="button-menu" >
           <span></span>
           <span></span>
@@ -31,8 +23,8 @@
     </header>
     <div id="inicio">
         <div id="presentacion">
-            ¡Saludos! <br>
-            Soy Juan Diego, técnico en Sistemas de Telecomuniaciones e Informáticos y Desarrollador de Aplicaciones Web.
+            <p>Soy Juan Diego, Técnico Superior en Sistemas de Telecomunicaciones e
+              Informáticos y Desarrollador de Aplicaciones Web.</p>
         </div>
         <div id="imagen">
             <img src="/img/jdjp.jpg" alt="foto-jdjp" id="jdjp">
@@ -107,9 +99,13 @@
     </div>
     <h2>Sobre mí</h2>
     <div id="sobre-mi">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatibus non itaque nesciunt quibusdam 
-        doloremque ut amet. Distinctio quidem qui, animi in eum, saepe consequatur quos quis molestias, 
-        alias accusamus.
+        <p>Me llamo Juan Diego, soy Técnico Superior en Sistemas de Telecomunicaciones
+          e Informáticos, actualmente estudiando Desarrollo de Aplicaciones Web.</p>
+
+        <p>Cuento con experiencia en reparaciones de equipos informáticos, además
+          de contar con cursos de formación para formarme más en el sector tecnológico.
+          Además de hacer proyectos, como desarrollador, descritos anteriormente.</p>
+        
     </div>
     <h2>Contacto</h2>
     <div id="contacto">
@@ -120,15 +116,17 @@
             <a href="https://twitter.com/"><img src="/img/icons/twitter.png" alt="twitter"></a>
         </div>
         <div id="form">
-            <form action="index.html">
-              <label>Nombre completo: </label>
-              <input type="text" name="username" id="username" maxlength="50" required>
+            <form action="index.html" id="formulario">
+              <label>Nombre: </label>
+              <input type="text" name="username" id="username" minlength="1" maxlength="50" required>
+              <label>Apellido: </label>
+              <input type="text" name="apellido" id="apellido" minlength="1" maxlength="50" required>
               <label>Correo de contacto: </label>
-              <input type="email" name="usermail" id="usermail" required>
+              <input type="email" name="usermail" id="usermail" minlength="3" required>
               <label>Comentario: </label>
               <textarea name="comentario" id="comentario" cols="40" rows="10" required></textarea>
               <div id="button">
-                <input type="submit" value="Enviar">
+                <input type="submit" value="Enviar" onclick="validar()">
               </div>
             </form>
         </div>
