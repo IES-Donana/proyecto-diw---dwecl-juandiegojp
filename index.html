@@ -60,6 +60,7 @@
     <p class="mt-8 text-2xl text-center" id="proyectos">Currículum Vitae</p>
     <div>
       <p class="mt-8 text-xl text-center" id="proyectos">Timeline</p>
+      <!-- Primer componente -->
       <section>
         <div class="text-black">
         <div class="container mx-auto flex flex-col justify-center md:flex-row my-12 md:my-24">
@@ -100,42 +101,46 @@
         </div>
       </div>
       </section>
-        <p class="mt-16 text-xl text-center" id="proyectos">Aptitudes:</p>
-        <ul>
+        <p class="mt-36 text-xl text-center" id="proyectos">Aptitudes:</p>
+        <ul class="flex flex-col items-center justify-center">
           <li>
-            <h3>Proactivo:</h3>
+            <p>Proactivo:</p>
             <progress value="67" max="100"></progress>
           </li>
           <li>
-            <h3>Resolutivo:</h3>
+            <p>Resolutivo:</p>
             <progress value="70" max="100"></progress>
           </li>
           <li>
-            <h3>Autodidacta:</h3>
+            <p>Autodidacta:</p>
             <progress value="60" max="100"></progress>
           </li>
           <li>
-            <h3>Capacidad de adaptación:</h3>
+            <p>Capacidad de Adaptación:</p>
             <progress value="80" max="100"></progress>
           </li>
         </ul>
     </div>
-    <p class="text-2xl text-center" id="proyectos">Sobre mí</p>
-    <div>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi voluptatibus non itaque nesciunt quibusdam 
-        doloremque ut amet. Distinctio quidem qui, animi in eum, saepe consequatur quos quis molestias, 
-        alias accusamus.
+    <p class="text-2xl text-center mt-16 mb-8" id="proyectos">Sobre mí</p>
+    <div class="mx-10 text-justify space-y-2 ">
+      <p>Me llamo Juan Diego, soy Técnico Superior en Sistemas de Telecomunicaciones
+        e Informáticos, actualmente estudiando Desarrollo de Aplicaciones Web.</p>
+
+      <p>Cuento con experiencia en reparaciones de equipos informáticos, además
+        de contar con cursos de formación para formarme más en el sector tecnológico.
+        Además de hacer proyectos, como desarrollador, descritos anteriormente.</p>
     </div>
-    <p class="text-2xl text-center" id="proyectos">Contacto</p>
-    <div>
-        <div>
-            <a href="https://github.com/juandiegojp"><img src="/img/icons/github.png" alt="github"></a>
-            <a href="https://es.linkedin.com/in/juan-diego-jurado-pimentel-934b3a204"><img src="/img/icons/linkedin.png" alt="linkedin"></a>
-            <a href="https://t.me/juandiewe"><img src="/img/icons/telegram.png" alt="telegram"></a>
-            <a href="https://twitter.com/"><img src="/img/icons/twitter.png" alt="twitter"></a>
+    <p class="text-2xl text-center mt-16" id="proyectos">Contacto</p>
+    <div class="flex">
+        <div class="space-x-10 w-full flex items-center justify-center">
+            <a class="w-16 h-16" href="https://github.com/juandiegojp"><img src="/img/icons/github.png" alt="github"></a>
+            <a class="w-16 h-16" href="https://es.linkedin.com/in/juan-diego-jurado-pimentel-934b3a204"><img src="/img/icons/linkedin.png" alt="linkedin"></a>
+            <a class="w-16 h-16" href="https://t.me/juandiewe"><img src="/img/icons/telegram.png" alt="telegram"></a>
+            <a class="w-16 h-16" href="https://twitter.com/"><img src="/img/icons/twitter.png" alt="twitter"></a>
         </div>
+        <!-- Segundo componente -->
         <div class="w-full">
-          <div class="bg-gradient-to-b from-blue-800 to-blue-600 h-96"></div>
+          <div class="h-96"></div>
           <div class="max-w-5xl mx-auto px-6 sm:px-6 lg:px-8 mb-12">
               <div class="bg-white w-full shadow rounded p-8 sm:p-12 -mt-72">
                   <p class="text-3xl font-bold leading-7 text-center">Contact me</p>
@@ -173,7 +178,7 @@
           </div>
       </div>
     </div>
-    <footer>
+    <footer class="w-full flex items-center justify-center h-20" style="background-color: #A8DADC;" >
         <p>Juandiewe© Todos los derechos reservados.</p>
     </footer>
 </body>
