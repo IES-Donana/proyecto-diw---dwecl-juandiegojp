@@ -1,7 +1,7 @@
 /* Importar fuente desde local. */
 @font-face {
   font-family: "Helvetica-JDJP";
-  src: url(/font/HelveticaNeueLTStd-Th.otf);
+  src: url(../font/HelveticaNeueLTStd-Th.otf);
 }
 
 #cv, #sobre-mi{
