@@ -38,23 +38,23 @@ function crearMenu() {
   nav.appendChild(div);
 }
 
-var x=0;
+//var x=0;
 toggleButton.addEventListener('click',() => {
   if (nav.hasChildNodes()) {
     nav.classList.toggle('show');
     toggleButton.classList.toggle('close');
-    x++;
-    console.log(x);
-    if (x==2) {
-      div.remove();
-      x=0;
-    }
+    //x++;
+    //console.log(x);
+    //if (x==2) {
+    //  div.remove();
+    //  x=0;
+    //}
   } else {
     //console.log(nav.hasChildNodes());
-    crearMenu();
+    //crearMenu();
     nav.classList.toggle('show');
     toggleButton.classList.toggle('close');
-    x++;
+    //x++;
   }
 });
 
