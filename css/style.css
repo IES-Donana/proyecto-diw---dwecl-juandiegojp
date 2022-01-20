@@ -57,6 +57,13 @@ header, footer {
 
 /* Inicio */
 
+#logotipo {
+  width: auto;
+  height: 100px;
+  margin-right: 40px;
+  transform: rotate(-90deg);
+}
+
 header div{
   display: flex;
   justify-content: flex-start;
