@@ -59,8 +59,8 @@ header, footer {
 
 #logotipo {
   width: auto;
-  height: 100px;
-  margin-right: 40px;
+  height: 90px;
+  margin: 20px 20px 0px 0px;
   transform: rotate(-90deg);
 }
 
