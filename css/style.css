@@ -24,6 +24,19 @@
   margin: 0em 0em 6em;
 }
 
+#bg-video {
+  height: 95vh;
+  width: 98.8vw;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: opacity(85%);
+}
+
 body {
   background-color: #f1faee;
   font-family: "Helvetica-JDJP";
@@ -149,6 +162,7 @@ a {
 }
 
 #presentacion {
+  color: white;
   font-size: xx-large;
   width: 75%;
   display: flex;
