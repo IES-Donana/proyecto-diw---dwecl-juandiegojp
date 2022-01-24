@@ -2,10 +2,13 @@
 var toggleButton = document.getElementById('button-menu');
 let nav = document.getElementById("nav");
 let div;
+let divLogo = document.getElementById("logotipo");
 crearMenu();
 
 function crearMenu() {
   div = document.createElement("div");
+  
+  let logo = document.createElement("img");
   let inicio = document.createElement("a");
   let proyectos = document.createElement("a");
   let cv = document.createElement("a");
@@ -13,6 +16,10 @@ function crearMenu() {
   let contacto = document.createElement("a");
   
   div.setAttribute("class","nav-links");
+  
+  logo.setAttribute("src", "img/logotipo.svg");
+  logo.setAttribute("alt", "logotipo");
+  logo.setAttribute("class", "animate__animated animate__fadeInRight");
   inicio.setAttribute("class", "link-underline nav-item");
   inicio.setAttribute("href", "#inicio");
   proyectos.setAttribute("class", "link-underline nav-item");
@@ -29,7 +36,9 @@ function crearMenu() {
   cv.innerText = "CV";
   sobreMi.innerText = "Sobre mí";
   contacto.innerText = "Contacto";
-
+  
+  divLogo.appendChild(logo);
+  div.appendChild(divLogo);
   div.appendChild(inicio);
   div.appendChild(proyectos);
   div.appendChild(cv);

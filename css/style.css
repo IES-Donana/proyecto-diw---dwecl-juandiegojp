@@ -37,7 +37,7 @@ header, footer {
 
 .main-nav{
   position: static;
-  margin-left: 0;
+  margin: 5px 0px 0px 5px;
   flex-basis: 100%;
   height: 100%;
 }
@@ -57,11 +57,15 @@ header, footer {
 
 /* Inicio */
 
+#logotipo img {
+  height: 60px;
+  margin: 0px 0px;
+}
+
 #logotipo {
-  width: auto;
-  height: 90px;
-  margin: 20px 20px 0px 0px;
   transform: rotate(-90deg);
+  max-width: 100px;
+  max-height: 100px;
 }
 
 header div{
@@ -75,7 +79,7 @@ header div{
 }
 
 header nav {
-  background-color: inherit;
+  /* background-color: inherit; */
   display: flex;
   align-items: center;
   padding-right: 0px;
@@ -84,7 +88,7 @@ header nav {
 a {
   text-align: center;
   width: 4em;
-  font-size: 20px;
+  font-size: 17px;
   text-decoration: none;
   color: #000;
   margin: 0px 15px;
@@ -176,9 +180,17 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 #pro-lista img {
+  filter: grayscale(100%);
   border-radius: 50%; 
   width: 100px; 
   height: 100px;
+  transition: all 0.5s;
+}
+
+#pro-lista img:hover {
+  filter: initial;
+  width: 250px;
+  height: 250px;
 }
 
 /* TIMELINE */
