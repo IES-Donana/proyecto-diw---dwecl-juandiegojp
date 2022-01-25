@@ -19,6 +19,18 @@
   }
 }
 
+@keyframes fontColor {
+  0% {
+    color: #000;
+  }
+  50% {
+    color:#B462D1;
+  }
+  100% {
+    color: #000;
+  }
+}
+
 #cv,
 #sobre-mi {
   margin: 0em 0em 6em;
@@ -59,7 +71,7 @@ footer {
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  background-color: #a8dadc;
+  
   height: 6em;
   width: 100%;
   display: flex;
@@ -162,7 +174,10 @@ a {
 }
 
 #presentacion {
-  color: white;
+  animation-name: fontColor;
+  animation-duration: 22s;
+  animation-iteration-count: infinite;
+  /* animation-direction: alternate; */
   font-size: xx-large;
   width: 75%;
   display: flex;
