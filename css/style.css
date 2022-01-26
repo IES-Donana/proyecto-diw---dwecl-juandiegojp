@@ -36,7 +36,7 @@
     color: #000;
   }
   50% {
-    color: #AF65BF;
+    color: #af65bf;
   }
   100% {
     color: #000;
@@ -189,7 +189,7 @@ a {
   animation-name: fontColor;
   animation-duration: 22s;
   animation-iteration-count: infinite;
-  
+
   font-size: xx-large;
   width: 75%;
   display: flex;
@@ -374,15 +374,15 @@ progress {
   width: 50%;
   height: inherit;
   display: grid;
-  grid-template-columns: 10em 10em 10em 10em; 
-  grid-template-rows: 10em 10em; 
-  gap: 10px 10px; 
-  grid-template-areas: 
+  grid-template-columns: 10em 10em 10em 10em;
+  grid-template-rows: 10em 10em;
+  gap: 10px 10px;
+  grid-template-areas:
     "uno dos tres cuatro"
     "dialogo dialogo dialogo dialogo";
-  justify-content: center; 
-  align-content: center; 
-  justify-items: center; 
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
   align-items: center;
 }
 
@@ -425,7 +425,7 @@ input[type="submit"] {
   border-radius: 15%;
 }
 
-a > img {
+a > picture img {
   width: 50px;
   height: 50px;
 }
@@ -434,32 +434,32 @@ a > img {
 footer {
   display: grid;
   width: 100%;
-  
+
   justify-content: center;
   align-items: center;
 }
 
 .botonCSS {
-	box-shadow: 0px 1px 0px 0px #1c1b18;
-	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
-	background-color:#eae0c2;
-	border-radius:25px;
-	border:1px solid #333029;
-	display:inline-block;
-	cursor:pointer;
-	color:#505739;
-	font-family:Arial;
-	font-size:12px;
-	font-weight:bold;
-	padding:12px 16px;
-	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+  background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+  background-color: #eae0c2;
+  border-radius: 25px;
+  border: 1px solid #333029;
+  display: inline-block;
+  cursor: pointer;
+  color: #505739;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
 }
 .botonCSS:hover {
-	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
-	background-color:#ccc2a6;
+  background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+  background-color: #ccc2a6;
 }
 .botonCSS:active {
-	position:relative;
-	top:1px;
+  position: relative;
+  top: 1px;
 }
