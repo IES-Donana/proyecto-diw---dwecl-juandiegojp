@@ -137,3 +137,19 @@ function validar(e) {
     alert("El formulario no está correctamente validado");
   }
 }
+
+/* Dialog */
+
+(function () {
+  var detalles = document.getElementById("detalles");
+  var cancelButton = document.getElementById("cancel");
+  var digContacto = document.getElementById("digContacto");
+
+  detalles.addEventListener("click", function () {
+    digContacto.showModal();
+  });
+
+  cancelButton.addEventListener("click", function () {
+    digContacto.close();
+  });
+})();

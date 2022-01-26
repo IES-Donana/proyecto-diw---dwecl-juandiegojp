@@ -21,7 +21,7 @@
   </head>
   <body>
     <video autoplay muted loop id="bg-video">
-      <source src="media/video/video.mp4" type="video/mp4">
+      <source src="media/video/video.mp4" type="video/mp4" />
     </video>
     <header class="main-header">
       <div id="name">JUAN DIEGO JURADO PIMENTEL</div>
@@ -58,18 +58,24 @@
       <ul id="pro-lista">
         <li id="bulevar">
           <img src="img/bulevar.jpg" alt="Bulevar" />
-          <p>Estudio Bulevar</p>
-          <p>Diseño para un estudio de diseño.</p>
+          <details>
+            <summary>Estudio Bulevar</summary>
+            <p>Diseño para un estudio de diseño.</p>
+          </details>
         </li>
         <li id="zodiacolors">
           <img src="img/zodiacolors.png" alt="Zodiacolors" />
-          <p>Zodiacolors</p>
-          <p>Diseño de una sección para la marca Titanux</p>
+          <details>
+            <summary>Zodiacolors</summary>
+            <p>Diseño de una sección para la marca Titanux</p>
+          </details>
         </li>
         <li id="original">
           <img src="img/original.jpg" alt="original" />
-          <p>Lo + original</p>
-          <p>Diseño de un sitio web para un comercio local.</p>
+          <details>
+            <summary>Lo + original</summary>
+            <p>Diseño de un sitio web para un comercio local.</p>
+          </details>
         </li>
       </ul>
     </div>
@@ -144,20 +150,24 @@
     <h2>Contacto</h2>
     <div id="contacto">
       <div id="media">
-        <a href="https://github.com/juandiegojp"
+        <a id="uno" href="https://github.com/juandiegojp"
           ><img src="img/icons/github.png" alt="github"
         /></a>
-        <a
+        <a id="dos"
           href="https://es.linkedin.com/in/juan-diego-jurado-pimentel-934b3a204"
           ><img src="img/icons/linkedin.png" alt="linkedin"
         /></a>
-        <a href="https://t.me/juandiewe"
+        <a id="tres" href="https://t.me/juandiewe"
           ><img src="img/icons/telegram.png" alt="telegram"
         /></a>
-        <a href="https://twitter.com/"
+        <a id="cuatro" href="https://twitter.com/"
           ><img src="img/icons/twitter.png" alt="twitter"
         /></a>
+        <menu id="dialogo">
+        <button class="botonCSS" id="detalles">Contacto personal.</button>
+      </menu>
       </div>
+      
       <div id="form">
         <form action="index.html" id="formulario">
           <label>Nombre: </label>
@@ -200,7 +210,17 @@
         </form>
       </div>
     </div>
+
+    <dialog id="digContacto">
+      <p>Correo Electrónico: juandiego.jurado@iesdonana.org</p>
+      <p>Teléfono de contacto: +34 642886644</p>
+      <menu>
+        <button id="cancel" type="reset">Volver</button>
+      </menu>
+    </dialog>
+
     <footer>
+      
       <p>Juandiewe© Todos los derechos reservados.</p>
     </footer>
   </body>

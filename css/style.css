@@ -187,7 +187,7 @@ a {
 
 #presentacion {
   animation-name: fontColor;
-  animation-duration: 22s;
+  animation-duration: 21.5s;
   animation-iteration-count: infinite;
   /* animation-direction: alternate; */
   font-size: xx-large;
@@ -207,7 +207,7 @@ a {
 
 img#jdjp {
   animation-name: bw;
-  animation-duration: 22s;
+  animation-duration: 10s;
   /* animation-iteration-count: infinite; */
   width: 200px;
   height: 240px;
@@ -222,7 +222,7 @@ img#jdjp {
   background-color: transparent;
   -webkit-appearance: none;
   margin: 0em 1em;
-  width: 50%;
+  width: 450px;
 }
 
 input[type="range"]::-webkit-slider-runnable-track {
@@ -373,9 +373,17 @@ progress {
   margin-bottom: 10px;
   width: 50%;
   height: inherit;
-  display: flex;
+  display: grid;
+  grid-template-columns: 10em 10em 10em 10em; 
+  grid-template-rows: 10em 10em; 
+  gap: 10px 10px; 
+  grid-template-areas: 
+    "uno dos tres cuatro"
+    "dialogo dialogo dialogo dialogo";
+  justify-content: center; 
+  align-content: center; 
+  justify-items: center; 
   align-items: center;
-  justify-content: center;
 }
 
 #form {
@@ -424,9 +432,34 @@ a > img {
 
 /* FOOTER */
 footer {
-  left: 0%;
-  bottom: 0%;
+  display: grid;
   width: 100%;
-  align-items: center;
+  
   justify-content: center;
+  align-items: center;
+}
+
+.botonCSS {
+	box-shadow: 0px 1px 0px 0px #1c1b18;
+	background:linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+	background-color:#eae0c2;
+	border-radius:25px;
+	border:1px solid #333029;
+	display:inline-block;
+	cursor:pointer;
+	color:#505739;
+	font-family:Arial;
+	font-size:12px;
+	font-weight:bold;
+	padding:12px 16px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+}
+.botonCSS:hover {
+	background:linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+	background-color:#ccc2a6;
+}
+.botonCSS:active {
+	position:relative;
+	top:1px;
 }
