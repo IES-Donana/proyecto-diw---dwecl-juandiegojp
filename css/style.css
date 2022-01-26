@@ -182,7 +182,7 @@ a {
 #inicio {
   display: flex;
   height: 25em;
-  margin: 2em 2em 7em;
+  margin: 2em 2em 10em;
 }
 
 #presentacion {
@@ -258,6 +258,32 @@ input[type="range"]::-webkit-slider-thumb {
   filter: initial;
   width: 150px;
   height: 150px;
+}
+
+/* TESTIMONIOS */
+
+#proyectos {
+  height: 32em;
+}
+
+#proProyectos {
+  
+  width: 50%;
+  height: 500px;
+  float: left;
+}
+
+#testimonios {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+
+#testimonios video {
+  height: auto;
+  width: 500px;
 }
 
 /* TIMELINE */
