@@ -19,12 +19,24 @@
   }
 }
 
+@keyframes bw {
+  0% {
+    filter: grayscale(100%);
+  }
+  50% {
+    filter: grayscale(50%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
+}
+
 @keyframes fontColor {
   0% {
     color: #000;
   }
   50% {
-    color:#B462D1;
+    color: #AF65BF;
   }
   100% {
     color: #000;
@@ -37,7 +49,7 @@
 }
 
 #bg-video {
-  height: 95vh;
+  height: 99vh;
   width: 98.8vw;
   object-fit: cover;
   position: absolute;
@@ -60,7 +72,7 @@ h2 {
 }
 
 header {
-  background-color: #a8dadc;
+  background-color: rgba(168, 218, 220, 0.5);
   height: 6em;
   width: 100%;
   display: flex;
@@ -71,7 +83,7 @@ footer {
   animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
-  
+
   height: 6em;
   width: 100%;
   display: flex;
@@ -170,7 +182,7 @@ a {
 #inicio {
   display: flex;
   height: 25em;
-  margin: 2em 2em 6.5em;
+  margin: 2em 2em 7em;
 }
 
 #presentacion {
@@ -194,6 +206,9 @@ a {
 }
 
 img#jdjp {
+  animation-name: bw;
+  animation-duration: 22s;
+  /* animation-iteration-count: infinite; */
   width: 200px;
   height: 240px;
   border-radius: 50%;
