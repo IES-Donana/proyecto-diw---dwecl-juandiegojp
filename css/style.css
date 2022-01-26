@@ -264,26 +264,25 @@ input[type="range"]::-webkit-slider-thumb {
 
 #proyectos {
   height: 32em;
+  
 }
 
 #proProyectos {
-  
   width: 50%;
-  height: 500px;
+  height: inherit;
   float: left;
 }
 
 #testimonios {
-  
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500px;
+  height: inherit;
 }
 
 #testimonios video {
   height: auto;
-  width: 500px;
+  width: 450px;
 }
 
 /* TIMELINE */

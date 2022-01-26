@@ -150,4 +150,13 @@
   .button-menu.close span:nth-child(3) {
     display: none;
   }
+
+  #bg-video {
+    max-width: 100%;
+  }
+
+  #testimonios video {
+    height: auto;
+    width: 300px;
+  }
 }
