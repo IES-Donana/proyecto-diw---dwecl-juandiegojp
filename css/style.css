@@ -49,7 +49,7 @@
 }
 
 #bg-video {
-  height: 99vh;
+  height: 99.5vh;
   width: 98.8vw;
   object-fit: cover;
   position: absolute;
@@ -187,9 +187,9 @@ a {
 
 #presentacion {
   animation-name: fontColor;
-  animation-duration: 21.5s;
+  animation-duration: 22s;
   animation-iteration-count: infinite;
-  /* animation-direction: alternate; */
+  
   font-size: xx-large;
   width: 75%;
   display: flex;
