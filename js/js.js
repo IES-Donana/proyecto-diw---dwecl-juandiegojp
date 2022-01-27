@@ -153,3 +153,8 @@ function validar(e) {
     digContacto.close();
   });
 })();
+
+
+function CambiarVideo(url){
+  document.getElementById('videosTestimonios').src=url;
+}
