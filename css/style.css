@@ -50,7 +50,7 @@
 
 #bg-video {
   height: 99.5vh;
-  max-width: 100%;
+  width: 98.5vw;
   object-fit: cover;
   position: absolute;
   left: 0;
