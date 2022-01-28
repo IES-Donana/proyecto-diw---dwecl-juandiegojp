@@ -38,7 +38,7 @@ function crearMenu() {
   contacto.innerText = "Contacto";
 
   divLogo.appendChild(logo);
-  div.appendChild(divLogo);
+  //div.appendChild(divLogo);
   div.appendChild(inicio);
   div.appendChild(proyectos);
   div.appendChild(cv);
