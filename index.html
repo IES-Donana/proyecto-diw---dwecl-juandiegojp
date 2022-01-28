@@ -24,7 +24,7 @@
       <source src="media/video/video.mp4" type="video/mp4" />
     </video>
     <audio autoplay loop>
-      <source src="media/audio/bk-sound.mp3">
+      <source src="media/audio/bk-sound.mp3" type="audio/mpeg">
   </audio>
     <header class="main-header">
       <div id="name">JUAN DIEGO JURADO PIMENTEL</div>
@@ -51,19 +51,19 @@
     </div>
     <h2>Proyectos</h2>
     <input
-      type="range"
-      name="slider"
-      id="slider"
-      value="0"
-      max="100"
-      min="0"
-      autocomplete="off"
+    type="range"
+    name="slider"
+    id="slider"
+    value="0"
+    max="100"
+    min="0"
+    autocomplete="off"
     />
     <div id="proyectos">
       <div id="proProyectos">
         <ul id="pro-lista">
           <li id="bulevar">
-            <a href="#" onclick="CambiarVideo('media/video/prueba.mp4')">
+            <a href="#proyectos" onclick="CambiarVideo('media/video/prueba.mp4')">
               <picture>
                 <img src="img/bulevar.jpg" alt="Bulevar" />
               </picture>
@@ -74,7 +74,7 @@
             </details>
           </li>
           <li id="zodiacolors">
-            <a href="#" onclick="CambiarVideo('media/video/prueba.mp4')">
+            <a href="#proyectos" onclick="CambiarVideo('media/video/video.mp4')">
               <picture>
                 <img src="img/zodiacolors.png" alt="Zodiacolors" />
               </picture>
@@ -85,7 +85,7 @@
             </details>
           </li>
           <li id="original">
-            <a href="#" onclick="CambiarVideo('media/video/video.mp4')">
+            <a href="#proyectos" onclick="CambiarVideo('media/video/prueba.mp4')">
               <picture>
                 <img src="img/original.jpg" alt="original" />
               </picture>
@@ -98,7 +98,7 @@
         </ul>
       </div>
       <div id="testimonios">
-        <video controls id="videosTestimonios">
+        <video controls preload="auto" id="videosTestimonios">
           <source src="" type="video/mp4" />
         </video>
       </div>
