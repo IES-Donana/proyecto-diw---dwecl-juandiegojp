@@ -1,18 +1,25 @@
 /* Menú Hamburguesa */
-var toggleButton = document.getElementById('button-menu');
+var toggleButton = document.getElementById("button-menu");
 let nav = document.getElementById("nav");
 let div;
+let divLogo = document.getElementById("logotipo");
 crearMenu();
 
 function crearMenu() {
   div = document.createElement("div");
+
+  let logo = document.createElement("img");
   let inicio = document.createElement("a");
   let proyectos = document.createElement("a");
   let cv = document.createElement("a");
   let sobreMi = document.createElement("a");
   let contacto = document.createElement("a");
-  
-  div.setAttribute("class","nav-links");
+
+  div.setAttribute("class", "nav-links");
+
+  logo.setAttribute("src", "img/logotipo.svg");
+  logo.setAttribute("alt", "logotipo");
+  logo.setAttribute("class", "animate__animated animate__fadeInRight");
   inicio.setAttribute("class", "link-underline nav-item");
   inicio.setAttribute("href", "#inicio");
   proyectos.setAttribute("class", "link-underline nav-item");
@@ -23,13 +30,15 @@ function crearMenu() {
   sobreMi.setAttribute("href", "#sobre-mi");
   contacto.setAttribute("class", "link-underline nav-item");
   contacto.setAttribute("href", "#contacto");
-  
+
   inicio.innerText = "Inicio";
   proyectos.innerText = "Proyectos";
   cv.innerText = "CV";
   sobreMi.innerText = "Sobre mí";
   contacto.innerText = "Contacto";
 
+  divLogo.appendChild(logo);
+  //div.appendChild(divLogo);
   div.appendChild(inicio);
   div.appendChild(proyectos);
   div.appendChild(cv);
@@ -38,33 +47,32 @@ function crearMenu() {
   nav.appendChild(div);
 }
 
-var x=0;
-toggleButton.addEventListener('click',() => {
+//var x=0;
+toggleButton.addEventListener("click", () => {
   if (nav.hasChildNodes()) {
-    nav.classList.toggle('show');
-    toggleButton.classList.toggle('close');
-    x++;
-    console.log(x);
-    if (x==2) {
-      div.remove();
-      x=0;
-    }
+    nav.classList.toggle("show");
+    toggleButton.classList.toggle("close");
+    //x++;
+    //console.log(x);
+    //if (x==2) {
+    //  div.remove();
+    //  x=0;
+    //}
   } else {
     //console.log(nav.hasChildNodes());
-    crearMenu();
-    nav.classList.toggle('show');
-    toggleButton.classList.toggle('close');
-    x++;
+    //crearMenu();
+    nav.classList.toggle("show");
+    toggleButton.classList.toggle("close");
+    //x++;
   }
 });
 
-nav.addEventListener('click',e => {
-    if(e.target.id === 'nav') {
-      nav.classList.remove('show');
-      toggleButton.classList.remove('close');
-    }
+nav.addEventListener("click", (e) => {
+  if (e.target.id === "nav") {
+    nav.classList.remove("show");
+    toggleButton.classList.remove("close");
+  }
 });
-
 
 /* Validación de formulario */
 var username = document.getElementById("username");
@@ -75,8 +83,11 @@ comment.disabled = true;
 
 email.onchange = cambioEmail;
 email.onblur = disComment;
-document.querySelectorAll("form input:not(input[type='submit'])").forEach((e) => 
-                          { e.addEventListener("focus", PalabrasRadiantes, false); }); 
+document
+  .querySelectorAll("form input:not(input[type='submit'])")
+  .forEach((e) => {
+    e.addEventListener("focus", PalabrasRadiantes, false);
+  });
 
 function PalabrasRadiantes(e) {
   var el = e.target;
@@ -100,15 +111,23 @@ function cambioEmail(e) {
   }
 }
 
-email.addEventListener('keyup', function (event) {
-  if (event.getModifierState('Shift') ) {
+email.addEventListener("keyup", function (event) {
+  if (event.getModifierState("Shift")) {
     alert("¡Has introducido una mayúscula!");
   }
 });
 
 function validar(e) {
-  if (username.validity.valid && apellido.validity.valid && /@/.test(email.value)) {
-    if(!confirm("El formulario será enviado, ¿estás seguro de los campos rellenados?")) {
+  if (
+    username.validity.valid &&
+    apellido.validity.valid &&
+    /@/.test(email.value)
+  ) {
+    if (
+      !confirm(
+        "El formulario será enviado, ¿estás seguro de los campos rellenados?"
+      )
+    ) {
       e.preventDefault();
       console.log("Rechazado.");
     } else {
@@ -116,4 +135,26 @@ function validar(e) {
     }
   } else {
     alert("El formulario no está correctamente validado");
-}};
+  }
+}
+
+/* Dialog */
+
+(function () {
+  var detalles = document.getElementById("detalles");
+  var cancelButton = document.getElementById("cancel");
+  var digContacto = document.getElementById("digContacto");
+
+  detalles.addEventListener("click", function () {
+    digContacto.showModal();
+  });
+
+  cancelButton.addEventListener("click", function () {
+    digContacto.close();
+  });
+})();
+
+
+function CambiarVideo(url){
+  document.getElementById('videosTestimonios').src=url;
+}

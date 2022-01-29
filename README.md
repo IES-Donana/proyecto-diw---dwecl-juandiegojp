@@ -35,6 +35,7 @@ puede rellenar para mandarme directamente un comentario/solicitud.
 
 ## MODIFICACIONES A LA GUÍA DE ESTILOS<a name="id3"></a>
 - Contacto: Pasa a tener cuatro RRSS en lugar de seis como estaba puesto en el prototipo FIGMA.
+- Se ha añadido un nuevos colores: texto de presentación (principal), animacion del footer, botón.
 
 ## RECURSOS<a name="id4"></a>
 - [Wireframes](https://wireframepro.mockflow.com/)

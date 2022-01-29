@@ -1,15 +1,70 @@
 /* Importar fuente desde local. */
 @font-face {
   font-family: "Helvetica-JDJP";
-  src: url(/font/HelveticaNeueLTStd-Th.otf);
+  src: url(../font/HelveticaNeueLTStd-Th.otf);
 }
 
-#cv, #sobre-mi{
+@keyframes identifier {
+  0% {
+    background-color: #457b9d;
+  }
+  25% {
+    background-color: #0c9ab3;
+  }
+  50% {
+    background-color: #00b9b5;
+  }
+  100% {
+    background-color: #51d4a3;
+  }
+}
+
+@keyframes bw {
+  0% {
+    filter: grayscale(100%);
+  }
+  50% {
+    filter: grayscale(50%);
+  }
+  100% {
+    filter: grayscale(0%);
+  }
+}
+
+@keyframes fontColor {
+  0% {
+    color: #000;
+  }
+  50% {
+    color: #af65bf;
+  }
+  100% {
+    color: #000;
+  }
+}
+
+#cv,
+#sobre-mi {
   margin: 0em 0em 6em;
 }
 
+#bg-video {
+  height: 100%;
+  width: 177.77777778vh; /* 100 * 16 / 9 */
+  min-width: 100%;
+  min-height: 56.25vw; /* 100 * 9 / 16 */
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+  filter: opacity(85%);
+}
+
 body {
-  background-color: #F1FAEE;
+  background-color: #f1faee;
   font-family: "Helvetica-JDJP";
   margin: 0px;
 }
@@ -18,8 +73,24 @@ h2 {
   text-align: center;
 }
 
+<<<<<<< HEAD
 header, footer {
   background-color: #A8DADC;
+=======
+header {
+  background-color: rgba(168, 218, 220, 0.5);
+  height: 6em;
+  width: 100%;
+  display: flex;
+}
+
+footer {
+  animation-name: identifier;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+>>>>>>> diw-entrega-4
   height: 6em;
   width: 100%;
   display: flex;
@@ -27,6 +98,7 @@ header, footer {
 
 /* Menú Hamburguesa */
 
+<<<<<<< HEAD
 .button-menu{
   display: none;
 }
@@ -38,10 +110,24 @@ header, footer {
 .main-nav{
   position: static;
   margin-left: 0;
+=======
+.button-menu {
+  display: none;
+}
+
+.main-logo {
+  flex-basis: 30%;
+}
+
+.main-nav {
+  position: static;
+  margin: 5px 0px 0px 5px;
+>>>>>>> diw-entrega-4
   flex-basis: 100%;
   height: 100%;
 }
 
+<<<<<<< HEAD
 .nav-links{
   
   flex-direction: row;
@@ -50,6 +136,14 @@ header, footer {
 }
 
 .link-item{
+=======
+.nav-links {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.link-item {
+>>>>>>> diw-entrega-4
   display: inline-block;
   margin-top: 0;
   margin-right: 2rem;
@@ -57,7 +151,23 @@ header, footer {
 
 /* Inicio */
 
+<<<<<<< HEAD
 header div{
+=======
+#logotipo img {
+  height: 60px;
+  margin: 0px 0px;
+}
+
+#logotipo {
+  transform: rotate(-90deg);
+  max-width: 70px;
+  max-height: 100px;
+  
+}
+
+header div {
+>>>>>>> diw-entrega-4
   display: flex;
   justify-content: flex-start;
   align-self: center;
@@ -68,7 +178,11 @@ header div{
 }
 
 header nav {
+<<<<<<< HEAD
   background-color: inherit;
+=======
+  /* background-color: inherit; */
+>>>>>>> diw-entrega-4
   display: flex;
   align-items: center;
   padding-right: 0px;
@@ -77,7 +191,11 @@ header nav {
 a {
   text-align: center;
   width: 4em;
+<<<<<<< HEAD
   font-size: 20px;
+=======
+  font-size: 17px;
+>>>>>>> diw-entrega-4
   text-decoration: none;
   color: #000;
   margin: 0px 15px;
@@ -86,18 +204,29 @@ a {
 .link-underline {
   display: inline-block;
   position: relative;
+<<<<<<< HEAD
   
 }
 
 .link-underline:after {
   content: '';
+=======
+}
+
+.link-underline:after {
+  content: "";
+>>>>>>> diw-entrega-4
   position: absolute;
   width: 100%;
   transform: scaleX(0);
   height: 2px;
   bottom: 0px;
   left: 0px;
+<<<<<<< HEAD
   background-color: #457B9D;
+=======
+  background-color: #457b9d;
+>>>>>>> diw-entrega-4
   transform-origin: bottom right;
   transition: transform 0.3s ease-out;
 }
@@ -107,6 +236,7 @@ a {
   transform-origin: bottom left;
 }
 
+<<<<<<< HEAD
 #inicio{
   display: flex;
   height: 25em;
@@ -114,6 +244,19 @@ a {
 }
 
 #presentacion {
+=======
+#inicio {
+  display: flex;
+  height: 25em;
+  margin: 2em 2em 10em;
+}
+
+#presentacion {
+  animation-name: fontColor;
+  animation-duration: 22s;
+  animation-iteration-count: infinite;
+
+>>>>>>> diw-entrega-4
   font-size: xx-large;
   width: 75%;
   display: flex;
@@ -130,12 +273,23 @@ a {
 }
 
 img#jdjp {
+<<<<<<< HEAD
   width: 200px;
   height: 240px;
   border-radius: 50%; 
 }
 
 
+=======
+  animation-name: bw;
+  animation-duration: 10s;
+  /* animation-iteration-count: infinite; */
+  width: 200px;
+  height: 240px;
+  border-radius: 50%;
+}
+
+>>>>>>> diw-entrega-4
 /* SLIDER */
 #slider {
   transform-origin: 10px 10px;
@@ -144,34 +298,92 @@ img#jdjp {
   background-color: transparent;
   -webkit-appearance: none;
   margin: 0em 1em;
+<<<<<<< HEAD
   width: 50%;
 }
 
 input[type=range]::-webkit-slider-runnable-track {
+=======
+  width: 450px;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+>>>>>>> diw-entrega-4
   height: 1px;
   cursor: pointer;
   background: #000;
 }
 
+<<<<<<< HEAD
 input[type=range]::-webkit-slider-thumb {
+=======
+input[type="range"]::-webkit-slider-thumb {
+>>>>>>> diw-entrega-4
   border: 1px solid #000;
   height: 20px;
   width: 20px;
   border-radius: 50px;
+<<<<<<< HEAD
   background: #457B9D;
+=======
+  background: #457b9d;
+>>>>>>> diw-entrega-4
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -10px;
 }
 
+<<<<<<< HEAD
 #pro-lista li{
+=======
+#pro-lista li {
+>>>>>>> diw-entrega-4
   list-style-type: none;
 }
 
 #pro-lista img {
+<<<<<<< HEAD
   border-radius: 50%; 
   width: 100px; 
   height: 100px;
+=======
+  filter: grayscale(100%);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  transition: all 0.5s;
+}
+
+#pro-lista img:hover {
+  filter: initial;
+  width: 150px;
+  height: 150px;
+}
+
+/* TESTIMONIOS */
+
+#proyectos {
+  height: 32em;
+  
+}
+
+#proProyectos {
+  width: 50%;
+  height: inherit;
+  float: left;
+}
+
+#testimonios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+}
+
+#testimonios video {
+  height: auto;
+  width: 450px;
+>>>>>>> diw-entrega-4
 }
 
 /* TIMELINE */
@@ -185,10 +397,17 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .timeline::after {
+<<<<<<< HEAD
   content: '';
   position: absolute;
   width: 1px;
   background-color:black;
+=======
+  content: "";
+  position: absolute;
+  width: 1px;
+  background-color: black;
+>>>>>>> diw-entrega-4
   top: 0px;
   bottom: 0px;
   left: 50%;
@@ -197,18 +416,30 @@ input[type=range]::-webkit-slider-thumb {
 /* Contenedor  */
 .container {
   padding: 0px 0px;
+<<<<<<< HEAD
   position:relative;
+=======
+  position: relative;
+>>>>>>> diw-entrega-4
   width: 49.5%;
 }
 
 /* Los círculos del timeline */
 .container::after {
+<<<<<<< HEAD
   content: '';
+=======
+  content: "";
+>>>>>>> diw-entrega-4
   position: absolute;
   width: 25px;
   height: 25px;
   right: -17px;
+<<<<<<< HEAD
   background-color: #E63946;
+=======
+  background-color: #e63946;
+>>>>>>> diw-entrega-4
   border: 1px solid #000;
   top: 50px;
   border-radius: 50%;
@@ -216,12 +447,20 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 .container:nth-child(2)::after {
+<<<<<<< HEAD
   content: '';
+=======
+  content: "";
+>>>>>>> diw-entrega-4
   position: absolute;
   width: 25px;
   height: 25px;
   right: -17px;
+<<<<<<< HEAD
   background-color: #457B9D;
+=======
+  background-color: #457b9d;
+>>>>>>> diw-entrega-4
   border: 1px solid #000;
   top: 50px;
   border-radius: 50%;
@@ -248,7 +487,10 @@ input[type=range]::-webkit-slider-thumb {
   transform: rotate(-90deg);
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> diw-entrega-4
 /* Barras de progreso */
 #progreso {
   display: flex;
@@ -267,6 +509,7 @@ progress {
 }
 
 ::-webkit-progress-bar {
+<<<<<<< HEAD
    background-color: #000;
 }
 
@@ -275,11 +518,24 @@ progress {
 }
 
 /* Sobre mi */ 
+=======
+  background-color: #000;
+}
+
+::-webkit-progress-value {
+  background-color: #e63946;
+}
+
+/* Sobre mi */
+>>>>>>> diw-entrega-4
 #sobre-mi {
   padding: 0em 2em;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> diw-entrega-4
 #contacto {
   display: flex;
 }
@@ -289,9 +545,23 @@ progress {
   margin-bottom: 10px;
   width: 50%;
   height: inherit;
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
+=======
+  display: grid;
+  grid-template-columns: 10em 10em 10em 10em;
+  grid-template-rows: 10em 10em;
+  gap: 10px 10px;
+  grid-template-areas:
+    "uno dos tres cuatro"
+    "dialogo dialogo dialogo dialogo";
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+>>>>>>> diw-entrega-4
 }
 
 #form {
@@ -302,8 +572,14 @@ progress {
   white-space: pre;
 }
 
+<<<<<<< HEAD
 #form input, textarea {
   background-color: #AAEEAA;
+=======
+#form input,
+textarea {
+  background-color: #aaeeaa;
+>>>>>>> diw-entrega-4
   opacity: 66%;
   border: 1px solid black;
 }
@@ -313,7 +589,12 @@ textarea {
   width: 25em;
 }
 
+<<<<<<< HEAD
 input[type='text'], input[type='email']{
+=======
+input[type="text"],
+input[type="email"] {
+>>>>>>> diw-entrega-4
   margin-bottom: 2em;
   width: 25em;
   height: 2em;
@@ -324,18 +605,27 @@ input[type='text'], input[type='email']{
   margin: -1em 0px;
 }
 
+<<<<<<< HEAD
 input[type='submit'] {
+=======
+input[type="submit"] {
+>>>>>>> diw-entrega-4
   font-size: 14px;
   width: 80px;
   height: 40px;
   border-radius: 15%;
 }
 
+<<<<<<< HEAD
 a > img {
+=======
+a > picture img {
+>>>>>>> diw-entrega-4
   width: 50px;
   height: 50px;
 }
 
+<<<<<<< HEAD
 
 /* FOOTER */
 footer {
@@ -344,4 +634,38 @@ footer {
   width: 100%;
   align-items: center;
   justify-content: center;
+=======
+/* FOOTER */
+footer {
+  display: grid;
+  width: 100%;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.botonCSS {
+  box-shadow: 0px 1px 0px 0px #1c1b18;
+  background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
+  background-color: #eae0c2;
+  border-radius: 25px;
+  border: 1px solid #333029;
+  display: inline-block;
+  cursor: pointer;
+  color: #505739;
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 16px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #ffffff;
+}
+.botonCSS:hover {
+  background: linear-gradient(to bottom, #ccc2a6 5%, #eae0c2 100%);
+  background-color: #ccc2a6;
+}
+.botonCSS:active {
+  position: relative;
+  top: 1px;
+>>>>>>> diw-entrega-4
 }
