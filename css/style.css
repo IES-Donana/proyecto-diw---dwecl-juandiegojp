@@ -43,6 +43,16 @@
   }
 }
 
+#contactoH2, #sobremiH2, #cvH2, #proyectoH2  {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#aptitudesH2 {
+  font-size: 22px;
+}
+
 #cv,
 #sobre-mi {
   margin: 0em 0em 6em;
@@ -356,6 +366,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* Contenido */
 .content {
+  font-size: 17px;
   margin: 0em 5em;
   padding: 20px 30px;
   position: relative;

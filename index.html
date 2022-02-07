@@ -20,11 +20,17 @@
     <script defer src="js/js.js"></script>
   </head>
   <body>
-    <header class="main-header">
+    <video autoplay muted loop id="bg-video">
+      <source src="media/video/video.mp4" type="video/mp4" />
+    </video>
+    <audio autoplay loop>
+      <source src="media/audio/bk-sound.mp3" type="audio/mpeg" />
+    </audio>
+    <header class="main-header" id="1">
       <div id="name">JUAN DIEGO JURADO PIMENTEL</div>
       <div id="logotipo"></div>
       <nav id="nav" class="main-nav"></nav>
-      <button id="button-menu" class="button-menu">
+      <button id="button-menu" class="button-menu" title="menu">
         <span></span>
         <span></span>
         <span></span>
@@ -33,8 +39,7 @@
     <div id="inicio">
       <div id="presentacion">
         <p>
-          Soy Juan Diego, Técnico Superior en Sistemas de Telecomunicaciones e
-          Informáticos y Desarrollador de Aplicaciones Web.
+          !!! 
         </p>
       </div>
       <div id="imagen">
@@ -43,27 +48,25 @@
         </picture>
       </div>
     </div>
-    <video autoplay muted loop id="bg-video">
-      <source src="media/video/video.mp4" type="video/mp4" />
-    </video>
-    <audio autoplay loop>
-      <source src="media/audio/bk-sound.mp3" type="audio/mpeg">
-  </audio>
-    <h2>Proyectos</h2>
+    <div id="proyectoH2">Proyectos</div>
     <input
-    type="range"
-    name="slider"
-    id="slider"
-    value="0"
-    max="100"
-    min="0"
-    autocomplete="off"
+      type="range"
+      name="slider"
+      id="slider"
+      value="0"
+      max="100"
+      min="0"
+      autocomplete="off"
+      aria-labelledby="sliderRange"
     />
     <div id="proyectos">
       <div id="proProyectos">
         <ul id="pro-lista">
           <li id="bulevar">
-            <a href="#proyectos" onclick="CambiarVideo('media/video/prueba.mp4')">
+            <a
+              href="#proyectoH2"
+              onclick="CambiarVideo('media/video/prueba.mp4')"
+            >
               <picture>
                 <img src="img/bulevar.jpg" alt="Bulevar" />
               </picture>
@@ -74,7 +77,10 @@
             </details>
           </li>
           <li id="zodiacolors">
-            <a href="#proyectos" onclick="CambiarVideo('media/video/test2_trial_0.mp4')">
+            <a
+              href="#proyectoH2"
+              onclick="CambiarVideo('media/video/test2_trial_0.mp4')"
+            >
               <picture>
                 <img src="img/zodiacolors.png" alt="Zodiacolors" />
               </picture>
@@ -85,7 +91,10 @@
             </details>
           </li>
           <li id="original">
-            <a href="#proyectos" onclick="CambiarVideo('media/video/test3_trial_0.mp4')">
+            <a
+              href="#proyectoH2"
+              onclick="CambiarVideo('media/video/test3_trial_0.mp4')"
+            >
               <picture>
                 <img src="img/original.jpg" alt="original" />
               </picture>
@@ -103,61 +112,61 @@
         </video>
       </div>
     </div>
-    
+
     <div id="cv">
-      <h2>Currículum Vitae</h2>
+      <div id="cvH2">Currículum Vitae</div>
       <div class="timeline">
         <div class="container left">
           <div class="content">
-            <h4>
+            
               Graduado en Formación Profesional de Ciclo Superior en Técnico de
               Desarrollado de Aplicaciones Web. (202X)
-            </h4>
+            
           </div>
         </div>
         <div class="container right">
           <div class="content">
-            <h4>
+            
               Servicio Técnico en MediaMarkt <br />
               (04/2020 - 06/202)
-            </h4>
+            
           </div>
         </div>
         <div class="container left">
           <div class="content">
-            <h4>
+            
               Graduado en Formación Profesional de Ciclo Superior en Técnico de
               Sistemas Informáticos e Informáticos.
-            </h4>
+            
           </div>
         </div>
         <div class="container right">
           <div class="content">
-            <h4>Graduado en Bachillerato de Ciencias.</h4>
+            Graduado en Bachillerato de Ciencias.
           </div>
         </div>
       </div>
-      <h2 style="text-align: center">Aptitudes:</h2>
+      <div id="aptitudesH2" style="text-align: center">Aptitudes:</div>
       <ul id="progreso">
         <li>
-          <h3>Proactivo:</h3>
+          <div>Proactivo:</div>
           <progress value="67" max="100"></progress>
         </li>
         <li>
-          <h3>Resolutivo:</h3>
+          <div>Resolutivo:</div>
           <progress value="70" max="100"></progress>
         </li>
         <li>
-          <h3>Autodidacta:</h3>
+          <div>Autodidacta:</div>
           <progress value="60" max="100"></progress>
         </li>
         <li>
-          <h3>Capacidad de adaptación:</h3>
+          <div>Capacidad de adaptación:</div>
           <progress value="80" max="100"></progress>
         </li>
       </ul>
     </div>
-    <h2>Sobre mí</h2>
+    <div id="sobremiH2">Sobre mí</div>
     <div id="sobre-mi">
       <p>
         Me llamo Juan Diego, soy Técnico Superior en Sistemas de
@@ -172,7 +181,7 @@
         anteriormente.
       </p>
     </div>
-    <h2>Contacto</h2>
+    <div id="contactoH2">Contacto</div>
     <div id="contacto">
       <div id="media">
         <a id="uno" href="https://github.com/juandiegojp">
@@ -204,7 +213,11 @@
       </div>
 
       <div id="form">
-        <form action="index.html" id="formulario">
+        <form
+          action="index.html"
+          id="formulario"
+          aria-label="formularioContacto"
+        >
           <label>Nombre: </label>
           <input
             type="text"
