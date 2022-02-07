@@ -23,14 +23,14 @@
     <video autoplay muted loop id="bg-video">
       <source src="media/video/video.mp4" type="video/mp4" />
     </video>
-    <audio autoplay loop>
+    <!-- <audio autoplay loop>
       <source src="media/audio/bk-sound.mp3" type="audio/mpeg" />
-    </audio>
+    </audio> -->
     <header class="main-header" id="1">
       <div id="name">JUAN DIEGO JURADO PIMENTEL</div>
       <div id="logotipo"></div>
       <nav id="nav" class="main-nav"></nav>
-      <button id="button-menu" class="button-menu" title="menu">
+      <button id="button-menu" class="button-menu" title="Menú">
         <span></span>
         <span></span>
         <span></span>
@@ -38,9 +38,9 @@
     </header>
     <div id="inicio">
       <div id="presentacion">
-        <p>
-          !!! 
-        </p>
+        <h1>
+          ¡Bienvenid@!
+        </h1>
       </div>
       <div id="imagen">
         <picture>
@@ -57,7 +57,7 @@
       max="100"
       min="0"
       autocomplete="off"
-      aria-labelledby="sliderRange"
+      aria-label="sliderRange"
     />
     <div id="proyectos">
       <div id="proProyectos">
@@ -107,7 +107,7 @@
         </ul>
       </div>
       <div id="testimonios">
-        <video controls preload="auto" id="videosTestimonios">
+        <video controls preload="auto" id="videosTestimonios" title="VideoTestimonios">
           <source src="" type="video/mp4" />
         </video>
       </div>
@@ -216,9 +216,8 @@
         <form
           action="index.html"
           id="formulario"
-          aria-label="formularioContacto"
         >
-          <label>Nombre: </label>
+          <label for="username">Nombre: </label>
           <input
             type="text"
             name="username"
@@ -227,7 +226,7 @@
             maxlength="50"
             required
           />
-          <label>Apellido: </label>
+          <label for="apellido">Apellido: </label>
           <input
             type="text"
             name="apellido"
@@ -236,7 +235,7 @@
             maxlength="50"
             required
           />
-          <label>Correo de contacto: </label>
+          <label for="email">Correo de contacto: </label>
           <input
             type="email"
             name="usermail"
@@ -244,7 +243,7 @@
             minlength="3"
             required
           />
-          <label>Comentario: </label>
+          <label for="comentario">Comentario: </label>
           <textarea
             name="comentario"
             id="comentario"
