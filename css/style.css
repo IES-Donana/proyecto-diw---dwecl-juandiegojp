@@ -390,7 +390,6 @@ progress {
   flex-direction: column;
   width: 600px;
 }
-
 ::-webkit-progress-bar {
   background-color: #000;
 }
@@ -399,13 +398,11 @@ progress {
   background-color: #e63946;
 }
 
+/* Firefox */
+
 ::-moz-progress-bar {
   background-color: #e63946;
 }
-::-moz-range-progress {
-  background-color: #000;
-}
-
 
 /* Sobre mi */
 #sobre-mi {
