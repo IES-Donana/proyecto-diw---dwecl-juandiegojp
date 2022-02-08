@@ -399,6 +399,14 @@ progress {
   background-color: #e63946;
 }
 
+::-moz-progress-bar {
+  background-color: #e63946;
+}
+::-moz-range-progress {
+  background-color: #000;
+}
+
+
 /* Sobre mi */
 #sobre-mi {
   padding: 0em 2em;
