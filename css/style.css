@@ -43,7 +43,10 @@
   }
 }
 
-#contactoH2, #sobremiH2, #cvH2, #proyectoH2  {
+#contactoH2,
+#sobremiH2,
+#cvH2,
+#proyectoH2 {
   font-size: 25px;
   font-weight: bold;
   text-align: center;
@@ -62,7 +65,7 @@
   height: 100%;
   width: 177.77777778vh;
   min-width: 100%;
-  min-height: 56.25vh; 
+  min-height: 56.25vh;
   object-fit: cover;
   position: absolute;
   left: 0;
@@ -140,7 +143,6 @@ footer {
   transform: rotate(-90deg);
   max-width: 70px;
   max-height: 100px;
-  
 }
 
 header div {
@@ -277,7 +279,6 @@ input[type="range"]::-webkit-slider-thumb {
 
 #proyectos {
   height: 32em;
-  
 }
 
 #proProyectos {
@@ -479,6 +480,9 @@ footer {
 }
 
 .botonCSS {
+  width: 50%;
+  padding: 1em;
+  text-align: center;
   box-shadow: 0px 1px 0px 0px #1c1b18;
   background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
   background-color: #eae0c2;
@@ -487,10 +491,8 @@ footer {
   display: inline-block;
   cursor: pointer;
   color: #505739;
-  font-family: Arial;
   font-size: 12px;
   font-weight: bold;
-  padding: 12px 16px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
 }
@@ -501,4 +503,7 @@ footer {
 .botonCSS:active {
   position: relative;
   top: 1px;
+}
+#cancel.botonCSS {
+  width: 25%;
 }
