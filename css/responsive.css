@@ -41,11 +41,11 @@
   }
 
   #media {
-    display: grid;
-    grid-template-columns: repeat(4, 0fr);
-    grid-gap: 25px;
-    grid-auto-rows: minmax(10px, auto);
-    margin: 2em 11.25em;
+    margin: 2em 6.5em;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   #form {
@@ -151,13 +151,13 @@
     display: none;
   }
 
-  #bg-video {
-    max-width: 100%;
-    
-  }
-
   #testimonios video {
     height: auto;
-    width: 300px;
+    width: 100px;
+  }
+
+  img#jdjp {
+    width: 100px;
+    height: 120px;
   }
 }
