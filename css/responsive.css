@@ -14,6 +14,7 @@
 
   .content {
     transform: rotate(0deg);
+    font-size: 14px;
   }
 
   .container::before {
@@ -34,6 +35,36 @@
 
   progress {
     width: 240px;
+  }
+
+  #inicio {
+    flex-direction: column;
+    text-align: center;
+  }
+  img#jdjp {
+    width: 120px;
+    height: 140px;
+  }
+  div#imagen {
+    width: 100%;
+    justify-content: center;
+  }
+  div#presentacion {
+    width: 100%;
+    font-size: 22px;
+  }
+  #proyectos {
+    display: flex;
+    flex-direction: column;
+    margin: 6em 0em;
+  }
+  #testimonios video {
+    height: auto;
+    width: 250px;
+  }
+
+  #name {
+    font-size: 16px;
   }
 
   #contacto {
@@ -151,13 +182,4 @@
     display: none;
   }
 
-  #testimonios video {
-    height: auto;
-    width: 100px;
-  }
-
-  img#jdjp {
-    width: 100px;
-    height: 120px;
-  }
 }
