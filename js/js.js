@@ -21,15 +21,15 @@ function crearMenu() {
   logo.setAttribute("alt", "logotipo");
   logo.setAttribute("class", "animate__animated animate__fadeInRight");
   inicio.setAttribute("class", "link-underline nav-item");
-  inicio.setAttribute("href", "#inicio");
+  inicio.setAttribute("href", "#inicioH2");
   proyectos.setAttribute("class", "link-underline nav-item");
-  proyectos.setAttribute("href", "#proyectos");
+  proyectos.setAttribute("href", "#proyectoH2");
   cv.setAttribute("class", "link-underline nav-item");
-  cv.setAttribute("href", "#cv");
+  cv.setAttribute("href", "#cvH2");
   sobreMi.setAttribute("class", "link-underline nav-item");
-  sobreMi.setAttribute("href", "#sobre-mi");
+  sobreMi.setAttribute("href", "#sobremiH2");
   contacto.setAttribute("class", "link-underline nav-item");
-  contacto.setAttribute("href", "#contacto");
+  contacto.setAttribute("href", "#contactoH2");
 
   inicio.innerText = "Inicio";
   proyectos.innerText = "Proyectos";

@@ -43,6 +43,19 @@
   }
 }
 
+#contactoH2,
+#sobremiH2,
+#cvH2,
+#proyectoH2 {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+#aptitudesH2 {
+  font-size: 22px;
+}
+
 #cv,
 #sobre-mi {
   margin: 0em 0em 6em;
@@ -50,9 +63,9 @@
 
 #bg-video {
   height: 100%;
-  width: 177.77777778vh; /* 100 * 16 / 9 */
+  width: 80vw;
   min-width: 100%;
-  min-height: 56.25vw; /* 100 * 9 / 16 */
+  min-height: 56.25vh;
   object-fit: cover;
   position: absolute;
   left: 0;
@@ -163,7 +176,6 @@ header div{
   transform: rotate(-90deg);
   max-width: 70px;
   max-height: 100px;
-  
 }
 
 header div {
@@ -356,15 +368,14 @@ input[type="range"]::-webkit-slider-thumb {
 
 #pro-lista img:hover {
   filter: initial;
-  width: 150px;
-  height: 150px;
+  width: 120px;
+  height: 120px;
 }
 
 /* TESTIMONIOS */
 
 #proyectos {
   height: 32em;
-  
 }
 
 #proProyectos {
@@ -481,6 +492,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* Contenido */
 .content {
+  font-size: 17px;
   margin: 0em 5em;
   padding: 20px 30px;
   position: relative;
@@ -507,7 +519,6 @@ progress {
   flex-direction: column;
   width: 600px;
 }
-
 ::-webkit-progress-bar {
 <<<<<<< HEAD
    background-color: #000;
@@ -523,6 +534,12 @@ progress {
 }
 
 ::-webkit-progress-value {
+  background-color: #e63946;
+}
+
+/* Firefox */
+
+::-moz-progress-bar {
   background-color: #e63946;
 }
 
@@ -645,6 +662,9 @@ footer {
 }
 
 .botonCSS {
+  width: 50%;
+  padding: 1em;
+  text-align: center;
   box-shadow: 0px 1px 0px 0px #1c1b18;
   background: linear-gradient(to bottom, #eae0c2 5%, #ccc2a6 100%);
   background-color: #eae0c2;
@@ -653,10 +673,8 @@ footer {
   display: inline-block;
   cursor: pointer;
   color: #505739;
-  font-family: Arial;
   font-size: 12px;
   font-weight: bold;
-  padding: 12px 16px;
   text-decoration: none;
   text-shadow: 0px 1px 0px #ffffff;
 }
@@ -668,4 +686,7 @@ footer {
   position: relative;
   top: 1px;
 >>>>>>> diw-entrega-4
+}
+#cancel.botonCSS {
+  width: 25%;
 }
