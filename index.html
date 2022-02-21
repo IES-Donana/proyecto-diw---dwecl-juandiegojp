@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio: Juan Diego</title>
+    <link
+      rel="shortcut icon"
+      href="img/favicon.ico"
+      type="image/x-icon"
+      sizes="16x16 32x32"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script defer src="js/js.js"></script>
+  </head>
+  <body>
+    <video autoplay muted loop id="bg-video">
+      <source src="media/video/video.mp4" type="video/mp4" />
+    </video>
+    <!-- <audio autoplay loop>
+      <source src="media/audio/bk-sound.mp3" type="audio/mpeg" />
+    </audio> -->
+    <header class="main-header" id="inicioH2">
+      <div id="name">JUAN DIEGO JURADO PIMENTEL</div>
+      <div id="logotipo"></div>
+      <nav id="nav" class="main-nav"></nav>
+      <button id="button-menu" class="button-menu" title="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <div id="inicio">
+      <div id="presentacion">
+        <h1>¡Bienvenid@ a mi web!</h1>
+      </div>
+      <div id="imagen">
+        <picture>
+          <img src="img/jdjp.jpg" alt="foto-jdjp" id="jdjp" />
+        </picture>
+      </div>
+    </div>
+
+    <div id="proyectoH2">Proyectos</div>
+
+    <input
+      type="range"
+      name="slider"
+      id="slider"
+      value="0"
+      max="100"
+      min="0"
+      autocomplete="off"
+      aria-label="sliderRange"
+      title="Slider"
+    />
+
+    <div id="proyectos">
+      <div id="proProyectos">
+        <ul id="pro-lista">
+          <li id="bulevar">
+            <a
+              href="#proyectoH2"
+              onclick="CambiarVideo('media/video/prueba.mp4')"
+            >
+              <picture>
+                <img src="img/bulevar.jpg" alt="Bulevar" />
+              </picture>
+            </a>
+            <details>
+              <summary>Estudio Bulevar</summary>
+              <p>Diseño para un estudio de diseño.</p>
+            </details>
+          </li>
+          <li id="zodiacolors">
+            <a
+              href="#proyectoH2"
+              onclick="CambiarVideo('media/video/test2_trial_0.mp4')"
+            >
+              <picture>
+                <img src="img/zodiacolors.png" alt="Zodiacolors" />
+              </picture>
+            </a>
+            <details>
+              <summary>Zodiacolors</summary>
+              <p>Diseño de una sección para la marca Titanux</p>
+            </details>
+          </li>
+          <li id="original">
+            <a
+              href="#proyectoH2"
+              onclick="CambiarVideo('media/video/test3_trial_0.mp4')"
+            >
+              <picture>
+                <img src="img/original.jpg" alt="original" />
+              </picture>
+            </a>
+            <details>
+              <summary>Lo + original</summary>
+              <p>Diseño de un sitio web para un comercio local.</p>
+            </details>
+          </li>
+        </ul>
+      </div>
+
+      <div id="testimonios">
+        <video controls preload="auto" id="videosTestimonios">
+          <source src="" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <div id="cv">
+      <div id="cvH2">Currículum Vitae</div>
+      <div class="timeline">
+        <div class="container left">
+          <div class="content">
+            Graduado en Formación Profesional de Ciclo Superior en Técnico de
+            Desarrollado de Aplicaciones Web. (202X)
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">
+            Servicio Técnico en MediaMarkt <br />
+            (04/2020 - 06/202)
+          </div>
+        </div>
+        <div class="container left">
+          <div class="content">
+            Graduado en Formación Profesional de Ciclo Superior en Técnico de
+            Sistemas Informáticos e Informáticos.
+          </div>
+        </div>
+        <div class="container right">
+          <div class="content">Graduado en Bachillerato de Ciencias.</div>
+        </div>
+      </div>
+      <div id="aptitudesH2" style="text-align: center">Aptitudes:</div>
+      <ul id="progreso">
+        <li>
+          <div>Proactivo:</div>
+          <progress value="67" max="100"></progress>
+        </li>
+        <li>
+          <div>Resolutivo:</div>
+          <progress value="70" max="100"></progress>
+        </li>
+        <li>
+          <div>Autodidacta:</div>
+          <progress value="60" max="100"></progress>
+        </li>
+        <li>
+          <div>Capacidad de adaptación:</div>
+          <progress value="80" max="100"></progress>
+        </li>
+      </ul>
+    </div>
+
+    <div id="sobremiH2">Sobre mí</div>
+    <div id="sobre-mi">
+      <p>
+        Me llamo Juan Diego, soy Técnico Superior en Sistemas de
+        Telecomunicaciones e Informáticos, actualmente estudiando Desarrollo de
+        Aplicaciones Web. Me encanta la informática y todo lo relacionado con
+        ella, desde dispositivos inteligentes como aparatos tecnológicos o
+        aplicaciones interesantes que hayan salido.
+      </p>
+      <p>
+        Además de estar gastando el teclado haciendo código, en mis ratos libres
+        me gusta salir a pasear tranquilamente escuchando música o ir al cine si
+        hay alguna película que me interese. Si hay algo de terror o ciencia
+        ficción, allí estaré.
+      </p>
+      <p></p>
+
+      <p>
+        Cuento con experiencia en reparaciones de equipos informáticos y cursos
+        de formación para formarme más en el sector tecnológico. Además de hacer
+        proyectos, como desarrollador, descritos anteriormente.
+      </p>
+    </div>
+
+    <div id="contactoH2">Contacto</div>
+    <div id="contacto">
+      <div id="media">
+        <a id="uno" href="https://github.com/juandiegojp">
+          <picture>
+            <img src="img/icons/github.png" alt="github" />
+          </picture>
+        </a>
+        <a
+          id="dos"
+          href="https://es.linkedin.com/in/juan-diego-jurado-pimentel-934b3a204"
+        >
+          <picture>
+            <img src="img/icons/linkedin.png" alt="linkedin" />
+          </picture>
+        </a>
+        <a id="tres" href="https://t.me/juandiewe">
+          <picture>
+            <img src="img/icons/telegram.png" alt="telegram" />
+          </picture>
+        </a>
+        <a id="cuatro" href="https://twitter.com/">
+          <picture>
+            <img src="img/icons/twitter.png" alt="twitter" />
+          </picture>
+        </a>
+        <div class="botonCSS" id="detalles">Contacto personal.</div>
+      </div>
+      <dialog id="digContacto">
+        <p>Correo Electrónico: juandiego.jurado@iesdonana.org</p>
+        <p>Teléfono de contacto: +34 642886644</p>
+        <div class="botonCSS" id="cancel">Volver</div>
+      </dialog>
+
+      <div id="form">
+        <form action="index.html" id="formulario">
+          <label for="username">Nombre: </label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            minlength="1"
+            maxlength="50"
+            required
+          />
+          <label for="apellido">Apellido: </label>
+          <input
+            type="text"
+            name="apellido"
+            id="apellido"
+            minlength="1"
+            maxlength="50"
+            required
+          />
+          <label for="usermail">Correo de contacto: </label>
+          <input
+            type="email"
+            name="usermail"
+            id="usermail"
+            minlength="3"
+            required
+          />
+          <label for="comentario">Comentario: </label>
+          <textarea
+            name="comentario"
+            id="comentario"
+            cols="40"
+            rows="10"
+            required
+          ></textarea>
+          <div id="button">
+            <input type="submit" value="Enviar" onclick="validar()" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <p>Juandiewe© Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
