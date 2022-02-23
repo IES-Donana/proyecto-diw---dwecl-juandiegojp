@@ -303,10 +303,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* La línea temporal */
 .timeline {
-  transform: rotate(90deg);
   position: relative;
-  max-width: 700px;
-  margin: 10px auto;
+  margin: 2em 0em;
 }
 
 .timeline::after {
@@ -332,7 +330,7 @@ input[type="range"]::-webkit-slider-thumb {
   position: absolute;
   width: 25px;
   height: 25px;
-  right: -17px;
+  right: -18px;
   background-color: #e63946;
   border: 1px solid #000;
   top: 50px;
@@ -341,16 +339,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .container:nth-child(2)::after {
-  content: "";
-  position: absolute;
-  width: 25px;
-  height: 25px;
-  right: -17px;
   background-color: #457b9d;
-  border: 1px solid #000;
-  top: 50px;
-  border-radius: 50%;
-  z-index: 1;
 }
 
 .left {
@@ -362,7 +351,7 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 .right::after {
-  left: -15px;
+  left: -14px;
 }
 
 /* Contenido */
@@ -371,7 +360,7 @@ input[type="range"]::-webkit-slider-thumb {
   margin: 0em 5em;
   padding: 20px 30px;
   position: relative;
-  transform: rotate(-90deg);
+  
 }
 
 /* Barras de progreso */
