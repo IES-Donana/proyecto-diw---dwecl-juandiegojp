@@ -1,5 +1,5 @@
 /* Responsive */
-@media screen and (max-width: 748px) {
+@media screen and (max-width: 800px) {
   .timeline::after {
     left: 28px;
   }
@@ -203,6 +203,10 @@
   }
 
   .button-menu.close span:nth-child(3) {
+    display: none;
+  }
+
+  .search-container {
     display: none;
   }
 }

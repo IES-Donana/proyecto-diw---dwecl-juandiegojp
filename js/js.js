@@ -14,6 +14,9 @@ function crearMenu() {
   let cv = document.createElement("a");
   let sobreMi = document.createElement("a");
   let contacto = document.createElement("a");
+  let busqueda = document.createElement("form");
+  let busquedaInput = document.createElement("input");
+  let busquedaBtn = document.createElement("button");
 
   div.setAttribute("class", "nav-links");
 
@@ -30,20 +33,29 @@ function crearMenu() {
   sobreMi.setAttribute("href", "#sobremiH2");
   contacto.setAttribute("class", "link-underline nav-item");
   contacto.setAttribute("href", "#contactoH2");
+  //busqueda.setAttribute("action", "index.html");
+  //busquedaInput.setAttribute("type", "text");
+  //busquedaInput.setAttribute("placeholder", "¿Qué quieres buscar?");
+  //busquedaInput.setAttribute("name", "search");
+  //busquedaBtn.setAttribute("type", "submit");
+
 
   inicio.innerText = "Inicio";
   proyectos.innerText = "Proyectos";
   cv.innerText = "CV";
   sobreMi.innerText = "Sobre mí";
   contacto.innerText = "Contacto";
+  //busquedaBtn.innerText = "Buscar";
 
   divLogo.appendChild(logo);
-  //div.appendChild(divLogo);
   div.appendChild(inicio);
   div.appendChild(proyectos);
   div.appendChild(cv);
   div.appendChild(sobreMi);
   div.appendChild(contacto);
+  //busqueda.appendChild(busquedaInput);
+  //busqueda.appendChild(busquedaBtn);
+  //div.appendChild(busqueda);
   nav.appendChild(div);
 }
 

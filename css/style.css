@@ -122,14 +122,23 @@ footer {
 }
 
 .nav-links {
+  justify-content: center;
+  align-items: center;
+  row-gap: 15px;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.link-item {
-  display: inline-block;
-  margin-top: 0;
-  margin-right: 2rem;
+
+.search-container {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-container form input {
+  width: 200px;
 }
 
 /* Inicio */
