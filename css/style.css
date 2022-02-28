@@ -175,7 +175,7 @@ header nav {
   padding-right: 0px;
 }
 
-a {
+#nav a {
   text-align: center;
   width: 4em;
   font-size: 17px;
@@ -512,4 +512,32 @@ footer {
 }
 #cancel.botonCSS {
   width: 25%;
+}
+
+.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #bbb;
+}
+.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: "/\00a0";
+}
+.breadcrumb li a {
+  color: #000;
+  text-decoration: none;
+}
+.breadcrumb li a:hover {
+  color: #457b9d;
+  text-decoration: underline;
+}
+
+.breadcrumb li:nth-child(2) a {
+  pointer-events: none;
+  opacity: 0.5;
 }
