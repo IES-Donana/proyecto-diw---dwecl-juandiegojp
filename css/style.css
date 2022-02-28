@@ -131,7 +131,7 @@ footer {
 
 
 .search-container {
-  
+  margin-top: 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -475,11 +475,10 @@ a > picture img {
 
 /* FOOTER */
 footer {
-  display: grid;
-  width: 100%;
-
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .botonCSS {
