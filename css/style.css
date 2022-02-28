@@ -90,7 +90,7 @@ header {
   overflow: hidden;
   position: fixed;
   top: 0;
-  background-color: rgba(168, 218, 220, .5);
+  background-color: rgba(168, 218, 220, 0.5);
   height: 6em;
   width: 100%;
   display: flex;
@@ -132,7 +132,6 @@ footer {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 
 .search-container {
   margin-top: 1em;
@@ -373,7 +372,6 @@ input[type="range"]::-webkit-slider-thumb {
   margin: 0em 5em;
   padding: 20px 30px;
   position: relative;
-  
 }
 
 /* Barras de progreso */
@@ -399,7 +397,6 @@ progress {
 ::-webkit-progress-value {
   background-color: #e63946;
 }
-
 
 /* Firefox */
 
@@ -524,7 +521,7 @@ footer {
   display: inline;
   font-size: 18px;
 }
-.breadcrumb li+li:before {
+.breadcrumb li + li:before {
   padding: 8px;
   color: black;
   content: "/\00a0";
