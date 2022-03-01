@@ -1,7 +1,6 @@
 @page {
   size: A4;
   margin: 2em;
-  box-shadow: initial;
   -webkit-print-color-adjust: exact;
 }
 
