@@ -220,7 +220,7 @@
     height: 100%;
   }
 
-  .search-container form {
+  .search-container {
     display: none;
     visibility: hidden;
   }
